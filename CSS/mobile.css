@@ -89,7 +89,7 @@
   }
 
   .home-content {
-    padding-top: 100px;
+    padding-top: 120px;
   }
 
   .home-content h1 {
@@ -145,7 +145,7 @@
   }
 
   .portfolio {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 
 
@@ -169,14 +169,18 @@
   }
 
   .prj-list button {
-    margin: 20px;
+    margin-bottom: 15px;
+
   }
 
 
   .subtitle {
     font-size: 50px;
     text-align: center;
-    margin-top: 70px;
+  }
+
+  .container {
+    margin-top: 40px;
   }
 
   .container1 {
@@ -196,19 +200,24 @@
 
   }
 
-  .heading1 {
-    padding-top: 50px;
-  }
+
 
   .heading1 {
     margin: auto;
-    padding-top: 70px;
+    padding-top: 40px;
   }
 
   #Competences {
     height: 100%;
   }
 
+  .bar {
+    font-size: 25px;
+  }
+
+  .Technical-bars .bar {
+    padding: 0;
+  }
 
 
   .bar .info .addhtml::before {
@@ -240,6 +249,10 @@
 
   .prj-list div {
     padding: 20px;
+  }
+
+  .prj-list p {
+    margin-top: 40px;
   }
 
   .contact-list {
@@ -372,7 +385,9 @@
   .container1 {
     max-width: 90%;
     margin: 0;
-    height: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    padding: 0;
   }
 
   .container2 {
@@ -383,6 +398,7 @@
     overflow-y: hidden;
     margin: auto;
     max-width: 100%;
+    padding-top: 15px;
 
   }
 
@@ -396,7 +412,7 @@
 
 
   .radial-bar .text {
-    bottom: 0;
+    margin-left: 25px;
   }
 
   .radial-bars .radial-bar {
@@ -404,7 +420,7 @@
   }
 
   .text-1 {
-    text-align: center;
+    margin-left: 28px;
   }
 
 

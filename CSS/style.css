@@ -111,7 +111,6 @@ body {
   padding-top: 40px;
   background: rgba(0, 0, 0, .8) url(../IMG/fond-5.jpg);
   background-blend-mode: darken;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -343,7 +342,6 @@ body {
 .subtitle {
   text-align: center;
   font-size: 60px;
-  margin-top: 160px;
   padding-top: 50px;
 }
 
