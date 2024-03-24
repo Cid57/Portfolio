@@ -122,7 +122,7 @@
   }
 
   .home-sci a {
-    margin: 80px;
+    margin: 60px;
 
   }
 
@@ -142,6 +142,10 @@
 
   .btn-box:hover {
     box-shadow: 0 0 5px rgb(194, 56, 187), 0 0 10px rgb(194, 56, 187), 0 0 15pc rgb(194, 56, 187), 0 0 20px rgb(194, 56, 187), 0 0 25px rgb(194, 56, 187);
+  }
+
+  .portfolio {
+    padding-bottom: 50px;
   }
 
 
@@ -168,6 +172,7 @@
   .subtitle {
     font-size: 50px;
     text-align: center;
+    margin-top: 70px;
   }
 
   .container1 {
@@ -182,12 +187,18 @@
 
     overflow-y: hidden;
     /* padding: 40px; */
-    margin: auto;
+    padding-right: 30px;
     max-width: 100%;
+
   }
 
   .heading1 {
     padding-top: 50px;
+  }
+
+  .heading1 {
+    margin: auto;
+    padding-top: 70px;
   }
 
   #Competences {
@@ -368,9 +379,9 @@
     padding: 10px;
     margin-left: 0px; */
     overflow-y: hidden;
-
     margin: auto;
     max-width: 100%;
+
   }
 
   .code {
@@ -383,8 +394,18 @@
 
 
   .radial-bar .text {
-    left: 25%;
+    bottom: 0;
   }
+
+  .radial-bars .radial-bar {
+    margin-bottom: 30px;
+  }
+
+  .text-1 {
+    text-align: center;
+  }
+
+
 
   .bar .info .addhtml::before {
     content: "90%";
