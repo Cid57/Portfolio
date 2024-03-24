@@ -753,6 +753,11 @@ body {
   margin-bottom: 3rem;
 }
 
+.contact-list a {
+  color: #7357DB;
+  font-size: 20px;
+}
+
 .contact-list li {
   margin-bottom: 10px;
   display: block;
