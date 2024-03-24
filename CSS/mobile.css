@@ -255,6 +255,10 @@
     margin-top: 40px;
   }
 
+  .contacts {
+    padding-top: 30px;
+  }
+
   .contact-list {
     text-align: center;
     padding-top: 10px;
@@ -379,6 +383,7 @@
   .subtitle {
     font-size: 50px;
     text-align: center;
+    margin: 0;
 
   }
 
@@ -452,6 +457,8 @@
     font-size: 50px;
     padding-bottom: 50px;
   }
+
+
 
 
   .contacts h2 {
