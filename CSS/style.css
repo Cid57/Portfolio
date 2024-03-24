@@ -387,13 +387,13 @@ body {
   margin: 10px;
 }
 
-.code {
+#Competences {
   background: rgba(0, 0, 0, .3) url(../IMG/code-2.jpg);
   background-blend-mode: darken;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 700px;
 
 }
 

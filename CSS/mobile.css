@@ -181,8 +181,11 @@
   }
 
   .heading1 {
-    padding-top: 90px;
-    margin: 0;
+    padding-top: 50px;
+  }
+
+  #Competences {
+    height: 100%;
   }
 
   .text {
@@ -285,7 +288,7 @@
   .home {
     width: 100%;
     align-items: normal;
-    padding-top: 40%;
+
     padding-bottom: 0;
   }
 
@@ -338,6 +341,7 @@
   .subtitle {
     font-size: 50px;
     text-align: center;
+
   }
 
   .container1 {
@@ -359,6 +363,7 @@
 
   .code {
     width: 600px;
+    height: auto;
     margin-left: 0;
     padding-left: 0;
   }

@@ -1,5 +1,13 @@
 let typed = new Typed(".text", {
-  strings: ["Développement web", "Programmation", "JavaScript", "PHP"],
+  strings: [
+    "Développement web",
+    "Programmation",
+    "JavaScript",
+    "PHP",
+    "React",
+    "Angular",
+    "Symphony",
+  ],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
