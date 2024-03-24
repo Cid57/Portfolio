@@ -209,9 +209,7 @@
     height: 100%;
   }
 
-  .text {
-    padding-left: 30px;
-  }
+
 
   .bar .info .addhtml::before {
     content: "90%";
