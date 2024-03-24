@@ -174,7 +174,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 20px;
+
 }
 
 
@@ -194,7 +194,7 @@ body {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: calc(.2s * var(--i));
-  padding: 27px;
+
 }
 
 .home-sci a:hover {
