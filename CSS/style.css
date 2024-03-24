@@ -343,7 +343,7 @@ body {
   text-align: center;
   font-size: 60px;
   padding-top: 50px;
-  margin-top: 90px;
+  margin-top: 140px;
 }
 
 
@@ -362,7 +362,7 @@ body {
 }
 
 .container {
-  margin-top: 160px;
+  margin-top: 100px;
   padding: 50px;
 }
 
@@ -699,7 +699,7 @@ body {
   align-items: center;
   gap: 3rem;
   padding: 40px;
-  padding-top: 160px;
+  padding-top: 100px;
   justify-content: center;
   background-color: #000;
 }
