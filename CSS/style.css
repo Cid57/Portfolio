@@ -170,6 +170,11 @@ body {
   margin-bottom: 30px;
 }
 
+.home-sci {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 
 .home-sci a {
