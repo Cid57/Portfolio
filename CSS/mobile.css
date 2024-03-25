@@ -1,13 +1,12 @@
 @media (max-width: 900px) {
-  * {
+  /* * {
     overflow-x: hidden;
-  }
+  } */
 
   .header {
     display: block;
   }
 
-  /* 
   .logo {
     position: relative;
     font-size: 35px;
@@ -18,9 +17,7 @@
   .logo::after {
     content: "\a";
     white-space: pre;
-  } */
-
-
+  }
 
   .navbar a {
     font-size: 25px;
@@ -32,66 +29,6 @@
   .navbar a::after {
     content: "\a";
     white-space: pre;
-  }
-
-  .sec {
-    display: flex;
-    flex-direction: column;
-    max-width: 70%;
-    margin: 10px;
-  }
-
-  #Competences {
-    height: 100%;
-    margin-top: 80px;
-  }
-
-  .subtitle {
-    padding-top: 70px;
-    margin-top: 0;
-  }
-
-  .bar {
-    width: 80%;
-  }
-
-  .container1 {
-    margin: auto;
-    padding-left: 80px;
-    margin-top: 50px;
-  }
-
-
-  .container2 {
-    overflow-y: hidden;
-    margin: auto;
-    max-width: 100%;
-    padding-top: 15px;
-    margin-left: 80px;
-    padding-top: 70px;
-
-  }
-
-  .text-1 {
-    padding-left: 35px;
-  }
-
-  .portfolio {
-    padding-top: 0;
-  }
-
-  .abt-res {
-    max-height: 350px;
-    margin-bottom: 40px;
-
-  }
-
-  .prj-list i {
-    overflow-y: hidden;
-  }
-
-  .contact-list i {
-    margin-top: 20px;
   }
 
 }
@@ -119,10 +56,6 @@
 
   .prj-list {
     margin-top: 0;
-  }
-
-  .prj-list i {
-    overflow-y: hidden;
   }
 
 
@@ -285,7 +218,7 @@
   }
 
   .container {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .container1 {
@@ -298,14 +231,10 @@
 
   .container2 {
 
-
-    /* padding-right: 30px; */
-
-    /* overflow-y: hidden; */
-    margin: auto;
+    overflow-y: hidden;
+    /* padding: 40px; */
+    padding-right: 30px;
     max-width: 100%;
-    padding-top: 15px;
-    margin-left: 70px;
 
   }
 
@@ -313,7 +242,7 @@
 
   .heading1 {
     margin: auto;
-    padding-top: 70px;
+    padding-top: 40px;
   }
 
   #Competences {
@@ -497,7 +426,7 @@
   }
 
   .container1 {
-
+    max-width: 90%;
     margin: 0;
     height: 100vh;
     overflow-y: hidden;
@@ -523,9 +452,7 @@
     padding-left: 0;
   }
 
-  .radial-bars {
-    width: 100vw;
-  }
+
 
   .radial-bar .text {
     margin-left: 25px;
@@ -535,7 +462,9 @@
     margin-bottom: 30px;
   }
 
-
+  .text-1 {
+    margin-left: 28px;
+  }
 
 
 
@@ -560,10 +489,7 @@
   }
 
 
-  #Competences {
-    height: 100%;
-    margin-top: 80px;
-  }
+
 
   .sub-title {
     font-size: 50px;
