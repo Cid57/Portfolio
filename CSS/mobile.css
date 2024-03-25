@@ -73,7 +73,7 @@
   }
 
   .text-1 {
-    padding-left: 50px;
+    padding-left: 35px;
   }
 
   .portfolio {
@@ -497,7 +497,7 @@
   }
 
   .container1 {
-    max-width: 90%;
+
     margin: 0;
     height: 100vh;
     overflow-y: hidden;
@@ -523,7 +523,9 @@
     padding-left: 0;
   }
 
-
+  .radial-bars {
+    width: 100vw;
+  }
 
   .radial-bar .text {
     margin-left: 25px;
@@ -533,9 +535,7 @@
     margin-bottom: 30px;
   }
 
-  .text-1 {
-    margin-left: 28px;
-  }
+
 
 
 
@@ -560,7 +560,10 @@
   }
 
 
-
+  #Competences {
+    height: 100%;
+    margin-top: 80px;
+  }
 
   .sub-title {
     font-size: 50px;
