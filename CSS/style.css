@@ -110,6 +110,7 @@ body {
 .home {
   width: 100%;
   min-height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,7 +233,6 @@ body {
   display: inline-block;
   left: 865px;
   bottom: 15px;
-
   margin-right: 5%;
   padding: 0;
   background-repeat: no-repeat;
@@ -259,12 +259,15 @@ body {
   background-color: black;
   display: inline-block;
   grid-template-columns: repeat(2, .5fr);
-
   width: 100%;
   justify-content: space-between;
-
   padding: 70px 5% 0;
 }
+
+
+
+
+
 
 .portfolio h2 {
   font-size: 40px;
@@ -276,8 +279,6 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-
-
   opacity: 1;
 }
 
@@ -419,7 +420,7 @@ body {
 }
 
 #Competences {
-  background: rgba(0, 0, 0, .3) url(../IMG/code-2.jpg);
+  background: rgba(0, 0, 0, 0.3) url(../IMG/code-2.jpg);
   background-blend-mode: darken;
   background-position: center;
   background-repeat: no-repeat;
@@ -631,14 +632,10 @@ body {
 }
 
 
-#Projets {
-  background-color: #000;
-}
-
 .sub-title {
   text-align: center;
   font-size: 60px;
-  padding-top: 0px;
+  padding-top: 30px;
   padding-bottom: 70px;
 }
 
