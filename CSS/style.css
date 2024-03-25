@@ -220,6 +220,7 @@ body {
   box-shadow: 0 0 20px rgb(194, 56, 187);
 }
 
+
 .btn-box {
   display: inline-block;
   padding: 12px 28px;
@@ -342,10 +343,28 @@ body {
   text-decoration: none;
   font-weight: 600;
   width: 30%;
-
-
   align-items: center;
 }
+
+.abtbtn-box2 {
+  display: flex;
+  justify-content: center;
+  /* display: inline-block; */
+  padding: 12px 28px;
+  margin-top: 30px;
+  background: #7357DB;
+  border-radius: 40px;
+  font-size: 15px;
+  text-align: center;
+  color: #081b29;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  width: 30%;
+  margin: auto;
+}
+
+
 
 .abtbtn-box:hover {
   box-shadow: 0 0 5px #7357DB, 0 0 5px #7357DB, 0 0 5px #7357DB, 0 0 5px #7357DB, 0 0 40px #7357DB;

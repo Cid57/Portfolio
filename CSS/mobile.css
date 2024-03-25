@@ -168,6 +168,44 @@
     box-shadow: 0 0 5px rgb(194, 56, 187), 0 0 10px rgb(194, 56, 187), 0 0 15pc rgb(194, 56, 187), 0 0 20px rgb(194, 56, 187), 0 0 25px rgb(194, 56, 187);
   }
 
+  .abtbtn-box2 {
+    display: flex;
+    justify-content: center;
+    /* display: inline-block; */
+    margin-bottom: 20px;
+    padding: 12px 28px;
+    background: #7357DB;
+    border-radius: 40px;
+    font-size: 15px;
+    text-align: center;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    width: 60%;
+
+
+  }
+
+  .abtbtn-box {
+    display: flex;
+    justify-content: center;
+    /* display: inline-block; */
+    padding: 12px 28px;
+    background: #7357DB;
+    border-radius: 40px;
+    font-size: 15px;
+    text-align: center;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+
   .prj-list button {
     margin-bottom: 15px;
 
