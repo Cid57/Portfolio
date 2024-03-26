@@ -373,7 +373,8 @@ body {
 
 
 
-.abtbtn-box:hover {
+.abtbtn-box:hover,
+.abtbtn-box2:hover {
   box-shadow: 0 0 5px #7357DB, 0 0 5px #7357DB, 0 0 5px #7357DB, 0 0 5px #7357DB, 0 0 40px #7357DB;
 }
 

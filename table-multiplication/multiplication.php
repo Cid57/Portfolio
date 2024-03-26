@@ -8,16 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <title>Table de multiplication</title>
 </head>
 
 <body>
     <h1>Table de multiplication</h1>
-    <form method="GET" action="">
-        <label for="table">Entrez un nombre :</label>
-        <input type="number" name="table" id="table" required>
-        <button type="submit">Générer</button>
-    </form>
+    <div class="container">
+        <form class="formulaire" method="GET" action="">
+            <label class="label" for="table">Entrez un nombre :</label>
+            <input class="input" type="number" name="table" id="table" required>
+            <button type="submit">Générer</button>
+        </form>
+    </div>
 
     <?php
     // Vérifie si un paramètre table est présent dans l'URL et s'il est numérique.
