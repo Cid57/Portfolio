@@ -6,7 +6,7 @@ let typed = new Typed(".text", {
     "PHP",
     "React",
     "Angular",
-    "Symphony",
+    "Symfony",
   ],
   typeSpeed: 100,
   backSpeed: 100,
