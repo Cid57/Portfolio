@@ -39,7 +39,7 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("hidden");
   }
 
-  // Mettez à jour la position de défilement précédente
+  // Mise à jour de la position de défilement précédente
   lastScrollTop = scrollTop;
 
   // Vérification de la position de défilement verticale de la fenêtre pour afficher ou masquer le bouton "Retour en haut"
