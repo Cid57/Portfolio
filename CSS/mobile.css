@@ -40,6 +40,14 @@
     overflow-y: inherit;
   }
 
+  /* a voir pour les modif */
+  .home-content a {
+    text-align: center;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 1s;
+    animation-delay: calc(.2s * var(--i));
+  }
+
 
   .code {
     display: flex;
