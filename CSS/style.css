@@ -146,6 +146,13 @@ body {
   opacity: 0;
 }
 
+.home-content a {
+  text-align: center;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: 1s;
+  animation-delay: calc(.2s * var(--i));
+}
+
 .home-content h1 {
   text-align: center;
   font-size: 50px;
@@ -841,6 +848,7 @@ body {
   opacity: 1;
 
 }
+
 
 .top i {
   color: black;
