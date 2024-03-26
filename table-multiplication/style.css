@@ -1,0 +1,92 @@
+body {
+    font-family: 'Protest Revolution', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 45px;
+    text-shadow: black 0.2em 0.2em 0.5em;
+}
+
+form {
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 20px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #72A1E5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #72A1E5;
+    color: white;
+}
+
+/* // Ligne paire */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Ligne impaire */
+tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+p.error {
+    color: red;
+}
+
+.center {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
