@@ -8,9 +8,9 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: black;
     font-size: 45px;
-    text-shadow: black 0.2em 0.2em 0.5em;
+    text-shadow: #72a1e5 0.2em 0.2em 0.5em;
 }
 
 form {
@@ -19,6 +19,10 @@ form {
 
 h2 {
     text-align: center;
+    font-size: 37px;
+    padding-top: 10px;
+
+
 }
 
 form {
@@ -53,7 +57,7 @@ button:hover {
 }
 
 table {
-    width: 50%;
+    width: 40%;
     margin: 20px auto;
     border-collapse: collapse;
     border: 2px solid #ddd;

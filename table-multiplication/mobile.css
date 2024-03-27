@@ -10,6 +10,17 @@
         margin-left: 38px;
     }
 
+    h2 {
+        font-size: 37px;
+    }
+
+    table {
+        width: 75%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        border: 2px solid #ddd;
+    }
+
 
     .formulaire {
         display: flex;
@@ -18,7 +29,7 @@
 
 
     label {
-        font-size: 32px;
+        font-size: 35px;
         padding-bottom: 20px;
     }
 

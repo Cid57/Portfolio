@@ -19,7 +19,7 @@ h2 {
 }
 
 .header-index {
-  background-image: url(/IMG/header-principal.jpg);
+  background-image: url(../IMG/header-principal.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,6 +39,12 @@ h2 {
 .btn-index button:hover {
   background-color: black;
   color: white;
+}
+
+
+.incontournable {
+  display: flex;
+  justify-content: space-around;
 }
 
 #card-shadow,
@@ -122,6 +128,18 @@ a:visited {
 
 }
 
+.titre-cameleon2 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+.titre-container {
+  font-size: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -157,6 +175,7 @@ a:visited {
 .card h2 {
   color: #ea3d52;
   text-align: center;
+  font-size: 50px;
 }
 
 .galerie {
@@ -250,7 +269,7 @@ a:visited {
 }
 
 .btn {
-  background-color: #90ed1e;
+  background-color: #67a3bc;
   border: unset;
 }
 
@@ -265,7 +284,6 @@ a:visited {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   height: 100vh;
 }
 
@@ -353,9 +371,13 @@ a:visited {
   margin: 50px auto;
 }
 
+.contact-form h2 {
+  font-size: 60px;
+}
+
 
 .header-cameleon {
-  background-image: url(/IMG/animaux/header-cameleon.jpg);
+  background-image: url(../IMG/animaux/header-cameleon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
