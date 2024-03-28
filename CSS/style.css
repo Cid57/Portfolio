@@ -7,6 +7,18 @@
 
 }
 
+.bx {
+  font-family: boxicons !important;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  display: inline-block;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* Style de base pour la barre de navigation */
 .navbar {
   position: fixed;
@@ -576,7 +588,9 @@ body {
 .radial-bars .radial-bar {
   width: 50%;
   height: 200px;
-  margin-bottom: 10px;
+
+  margin-bottom: 40px;
+
   position: relative;
 }
 
@@ -670,12 +684,12 @@ body {
   color: #7357DB;
 }
 
-.prj-list {
+/* .prj-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
-}
+} */
 
 .prj-list div {
   background-color: transparent;
@@ -689,6 +703,18 @@ body {
   text-align: center;
 }
 
+.prj-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.prj-list>div {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+
+}
 
 
 .prj-list i {
@@ -710,7 +736,6 @@ body {
   display: inline-block;
   text-decoration: none;
   padding: 10px;
-
 
 }
 
@@ -777,6 +802,10 @@ body {
 
 .contact-list {
   margin-bottom: 3rem;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 40px;
+
 }
 
 .contact-list a {
@@ -789,7 +818,8 @@ body {
   display: block;
   margin-bottom: 10px;
   letter-spacing: 2px;
-
+  font-size: larger;
+  padding-top: 20px;
 }
 
 .contact-list i {

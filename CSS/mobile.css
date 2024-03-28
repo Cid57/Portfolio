@@ -1,3 +1,20 @@
+@media (max-width: 1024px) {
+  .prj-list>div {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .prj-list div {
+    width: calc(100%);
+  }
+
+  .prj-list i {
+    overflow-y: hidden;
+  }
+}
+
+
 @media (max-width: 900px) {
   /* * {
     overflow-x: hidden;
@@ -34,11 +51,11 @@
 }
 
 
-@media (max-width: 700px) {
-  * {
+@media (max-width: 768px) {
+  /* * {
     overflow-x: hidden;
     overflow-y: inherit;
-  }
+  } */
 
   /* a voir pour les modif */
   .home-content a {
@@ -240,8 +257,7 @@
   .container2 {
 
     overflow-y: hidden;
-    /* padding: 40px; */
-    padding-right: 30px;
+    /* padding-right: 30px; */
     max-width: 100%;
 
   }
@@ -267,7 +283,7 @@
 
 
   .bar .info .addhtml::before {
-    content: "90%";
+    content: "80%";
   }
 
   .bar .info .addcss::before {
@@ -275,15 +291,15 @@
   }
 
   .bar .info .addbootstrap::before {
-    content: "75%";
+    content: "65%";
   }
 
   .bar .info .addphp::before {
-    content: "40%";
+    content: "50%";
   }
 
   .bar .info .addjs::before {
-    content: "30%";
+    content: "50%";
   }
 
 
@@ -306,22 +322,36 @@
   }
 
   .contact-list {
+    /* padding-left: 50px;
+    padding-top: 50px; */
     text-align: center;
     padding-top: 10px;
+    margin-bottom: 40px;
   }
 
   .contact-icons i {
-    margin-left: 70px;
+    margin-left: 72px;
   }
 
   .contacts h2 {
     font-size: 50px;
   }
 
+  .contact-text h4 {
+    font-size: 30px;
+  }
+
   .contact-list i {
     font-size: 15px;
     padding: 5px 5px 0 0;
   }
+
+  .contact-list a {
+    padding-right: 10px;
+  }
+
+
+
 
   .top {
     position: fixed;
@@ -421,8 +451,9 @@
     margin-right: 0;
   }
 
-  .abtbtn-box:hover {
-    box-shadow: 0 0 5px rgb(194, 56, 187), 0 0 10px rgb(194, 56, 187), 0 0 15pc rgb(194, 56, 187), 0 0 20px rgb(194, 56, 187), 0 0 25px rgb(194, 56, 187);
+  .abtbtn-box:hover,
+  .abtbtn-box2:hover {
+    box-shadow: 0 0 5px #7357DB, 0 0 5px #7357DB, 0 0 5pc #7357DB, 0 0 5px #7357DB, 0 0 40px #7357DB;
   }
 
 
@@ -432,6 +463,8 @@
     margin: 0;
 
   }
+
+
 
   .container1 {
     max-width: 90%;
@@ -450,11 +483,12 @@
     margin: auto;
     max-width: 100%;
     padding-top: 15px;
+    padding-right: 14px;
 
   }
 
   .code {
-    width: 600px;
+    width: 580px;
     height: auto;
     margin-left: 0;
     padding-left: 0;
@@ -466,8 +500,8 @@
     margin-left: 25px;
   }
 
-  .radial-bars .radial-bar {
-    margin-bottom: 30px;
+  .text .text-1 {
+    margin: auto;
   }
 
   .text-1 {
@@ -475,17 +509,25 @@
   }
 
 
+  .radial-bars .radial-bar {
+    margin-bottom: 30px;
+  }
+
+
+
+
+
 
   .bar .info .addhtml::before {
-    content: "90%";
+    content: "80%";
   }
 
   .bar .info .addcss::before {
     content: "80%";
   }
 
-  .bar .info .addpy::before {
-    content: "75%";
+  .bar .info .addbootstrap::before {
+    content: "65%";
   }
 
   .bar .info .addphp::before {
@@ -512,9 +554,22 @@
   }
 
   .contact-list i {
-    font-size: 13px;
+    font-size: 18px;
     padding: 5px 5px 0 0;
   }
+
+
+
+  .contact-list li {
+    margin-bottom: 10px;
+    display: block;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: larger;
+    padding-top: 20px;
+  }
+
+
 
   .top {
     position: fixed;
