@@ -146,9 +146,20 @@
     margin-right: 8px;
   }
 
+  .home-sci {
+    display: flex;
+    flex-direction: row;
+  }
+
   .home-sci a {
     margin: 60px;
 
+  }
+
+  .home-sci a {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
   }
 
   .img {
@@ -329,6 +340,8 @@
     margin-bottom: 40px;
   }
 
+
+
   .contact-icons i {
     margin-left: 72px;
   }
@@ -396,10 +409,7 @@
     white-space: pre;
   }
 
-  .home-sci {
-    display: flex;
-    flex-direction: row;
-  }
+
 
 
 
@@ -451,9 +461,8 @@
     margin-right: 0;
   }
 
-  .abtbtn-box:hover,
-  .abtbtn-box2:hover {
-    box-shadow: 0 0 5px #7357DB, 0 0 5px #7357DB, 0 0 5pc #7357DB, 0 0 5px #7357DB, 0 0 40px #7357DB;
+  .abtbtn-box:hover {
+    box-shadow: 0 0 5px rgb(194, 56, 187), 0 0 10px rgb(194, 56, 187), 0 0 15pc rgb(194, 56, 187), 0 0 20px rgb(194, 56, 187), 0 0 25px rgb(194, 56, 187);
   }
 
 

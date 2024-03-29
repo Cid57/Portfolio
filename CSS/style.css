@@ -420,7 +420,7 @@ body {
 
 .container {
   margin-top: 100px;
-  padding: 50px;
+  padding: 40px;
 }
 
 
@@ -800,12 +800,16 @@ body {
 }
 
 
+/* .contact-list {
+  margin-bottom: 3rem;
+
+} */
+
 .contact-list {
   margin-bottom: 3rem;
   text-align: center;
   padding-top: 10px;
   margin-bottom: 40px;
-
 }
 
 .contact-list a {
