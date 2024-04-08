@@ -4,8 +4,114 @@
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
   scroll-behavior: smooth;
-
 }
+
+
+
+.navbar {
+
+  background: linear-gradient(#000, 85%, #7357DB);
+  box-shadow: 1em 1em 10em 0.1em #7357DB;
+  transition: all .3s ease-in-out;
+  width: 100%;
+  justify-content: center;
+  z-index: 2;
+  position: fixed;
+}
+
+ul {
+
+  transition: top 0.3s;
+  background: linear-gradient(#000, 85%, #7357DB);
+  top: 40px;
+  left: 600px;
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  /* box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.5); */
+
+
+
+  li {
+    list-style: none;
+
+    a {
+      position: relative;
+      display: block;
+      margin: 10px 0;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: white;
+      font-family: sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      transition: .5s;
+      z-index: 1;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        transform: scaleY(2);
+        opacity: 0;
+        transition: .3s;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        transform: scale(0);
+        opacity: 0;
+        transition: .3s;
+        z-index: -1;
+      }
+
+      &:hover {
+        color: #fff;
+
+        &:before {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+
+        &:after {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .bx {
   font-family: boxicons !important;
@@ -20,22 +126,13 @@
 }
 
 
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  padding: 10px 0;
-  transition: top 0.3s;
-
-}
 
 
-.navbar.hidden {
+
+/* .navbar.hidden {
   top: -100px;
 
-}
+} */
 
 
 body {
@@ -44,8 +141,19 @@ body {
 }
 
 
+/* .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  transition: top 0.3s;
 
-.navbar {
+} */
+
+
+/* .navbar {
 
   background: linear-gradient(#000, 85%, #7357DB);
   display: flex;
@@ -56,22 +164,13 @@ body {
   justify-content: center;
   z-index: 2;
   position: fixed;
-}
+} */
 
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 10px 30px 0 0;
-  animation: slideUP .5s ease forwards;
-  animation-delay: calc(.2s * var(--i));
-  transition: .3s;
-
-}
 
 
-.navbar a:hover {
+
+/* .navbar a:hover {
   color: rgb(194, 56, 187);
   text-decoration: none;
 }
@@ -90,7 +189,7 @@ body {
 .navbar a:hover:after {
   width: 90%;
   background: rgb(194, 56, 187);
-}
+} */
 
 
 
@@ -101,7 +200,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
   background: rgba(0, 0, 0, 0.7) url(../IMG/fond-5.jpg);
   background-blend-mode: darken;
   background-position: center;
@@ -111,7 +209,7 @@ body {
 
 .home-content {
   max-width: 600px;
-  margin-top: 60px;
+
 }
 
 .home-content p {
@@ -141,14 +239,14 @@ body {
   animation-delay: 1s;
 }
 
-.home-content h3 {
+/* .home-content h3 {
 
   font-size: 25px;
   font-weight: 700;
   opacity: 0;
   animation: slideBottom 1s ease forwards;
-  animation-delay: .7s;
-}
+  animation-delay: .3s;
+} */
 
 .home-content h4 {
   text-align: center;
@@ -156,7 +254,7 @@ body {
   font-weight: 700;
   opacity: 0;
   animation: slideTop 1s ease forwards;
-  animation-delay: calc(.2s * var(--i));
+  animation-delay: calc(.1s * var(--i));
 }
 
 .home-content h4 span {
@@ -182,8 +280,8 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background: transparent;
   border: 2px solid rgb(194, 56, 187);
   border-radius: 50%;
@@ -262,7 +360,7 @@ body {
 
 
 .portfolio h2 {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .portfolio-img {
@@ -367,6 +465,7 @@ body {
   border-radius: 8px;
   transition: all 0.5s;
   margin: auto;
+  margin-top: 20px;
   display: block;
   width: fit-content;
   text-decoration: none;
