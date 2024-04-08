@@ -4,43 +4,19 @@
   }
 }
 
-@media (max-width: 768px) {
-  .prj-list div {
-    width: calc(100%);
-  }
-
-  .prj-list i {
-    overflow-y: hidden;
-  }
-}
-
 
 @media (max-width: 900px) {
-  /* * {
-    overflow-x: hidden;
-  } */
 
   .header {
     display: block;
   }
 
-  .logo {
-    position: relative;
-    font-size: 35px;
-    font-weight: 500;
-    text-align: center;
-  }
-
-  .logo::after {
-    content: "\a";
-    white-space: pre;
-  }
 
   .navbar a {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 200;
     margin-left: 0px;
-    padding: 10px 10px 0 0;
+
   }
 
   .navbar a::after {
@@ -48,16 +24,26 @@
     white-space: pre;
   }
 
+  embed {
+    display: none;
+  }
+
+  .home {
+    padding-top: 60px;
+  }
+
+
 }
 
 
 @media (max-width: 768px) {
-  /* * {
+  * {
     overflow-x: hidden;
     overflow-y: inherit;
-  } */
+  }
 
-  /* a voir pour les modif */
+
+
   .home-content a {
     text-align: center;
     animation: slideBottom 1s ease forwards;
@@ -71,18 +57,18 @@
     height: 100%;
   }
 
+  .code {
+    width: 500px;
+    height: auto;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
   .sec {
     display: flex;
-    flex-direction: column;
-    max-width: 70%;
     margin: 10px;
-
+    width: auto;
   }
-
-  .prj-list {
-    margin-top: 0;
-  }
-
 
 
   .header {
@@ -101,13 +87,6 @@
     content: "\a";
     white-space: pre;
   }
-
-
-  /* .home {
-    align-items: normal;
-    padding-top: 40%;
-    padding-bottom: 0;
-  } */
 
   .home {
     min-height: 70vh;
@@ -186,28 +165,13 @@
 
 
 
-
-  .portfolio-text h2 {
-    font-size: 30px;
-    letter-spacing: 5px;
-  }
-
-  .portfolio-text p {
-    font-size: 15px;
-    line-height: normal;
-    letter-spacing: 1px;
-    margin-bottom: 4rem;
-    text-align: left;
-  }
-
   .abtbtn-box:hover {
     box-shadow: 0 0 5px rgb(194, 56, 187), 0 0 10px rgb(194, 56, 187), 0 0 15pc rgb(194, 56, 187), 0 0 20px rgb(194, 56, 187), 0 0 25px rgb(194, 56, 187);
   }
 
-  .abtbtn-box2 {
+  /* .abtbtn-box2 {
     display: flex;
     justify-content: center;
-    /* display: inline-block; */
     margin-bottom: 20px;
     padding: 12px 28px;
     background: #7357DB;
@@ -219,14 +183,36 @@
     text-decoration: none;
     font-weight: 600;
     width: 60%;
+  } */
 
+
+  .abtbtn-box2 {
+    padding: 8px 16px;
+    font-size: 20px;
+    border-radius: 8px;
+  }
+
+  .abtbtn-box2:hover {
+    background: rgb(115, 87, 219);
+    background: linear-gradient(194deg, rgba(115, 87, 219, 1) 31%, rgba(252, 70, 227, 1) 100%);
+    border-radius: 8px;
 
   }
+
+  .abtbtn-box2:hover:before,
+  .abtbtn-box2:hover:after {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+
+
+
 
   .abtbtn-box {
     display: flex;
     justify-content: center;
-    /* display: inline-block; */
     padding: 12px 28px;
     background: #7357DB;
     border-radius: 40px;
@@ -244,45 +230,54 @@
 
   .prj-list button {
     margin-bottom: 15px;
+  }
 
+  .prj-list button a:hover {
+    background: none;
+  }
+
+  .prj-list {
+    margin-top: 0;
+  }
+
+  .prj-list div {
+    width: calc(100%);
+    padding: 20px;
+  }
+
+  .prj-list i {
+    overflow-y: hidden;
+  }
+
+
+  .prj-list p {
+    margin-top: 40px;
   }
 
 
   .subtitle {
     font-size: 50px;
     text-align: center;
+    padding-top: 50px;
+    margin-top: 30px;
   }
 
   .container {
     margin-top: 40px;
   }
 
-  .container1 {
 
-    max-height: 500px;
-    margin-left: 50px;
-    /* max-width: 330px; */
-    max-width: 100%;
+  #Competences {
+    height: 800px;
   }
-
-  .container2 {
-
-    overflow-y: hidden;
-    /* padding-right: 30px; */
-    max-width: 100%;
-
-  }
-
 
 
   .heading1 {
     margin: auto;
-    padding-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
-  #Competences {
-    height: 100%;
-  }
 
   .bar {
     font-size: 25px;
@@ -293,48 +288,25 @@
   }
 
 
-  .bar .info .addhtml::before {
-    content: "80%";
+  .bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
-
-  .bar .info .addcss::before {
-    content: "80%";
-  }
-
-  .bar .info .addbootstrap::before {
-    content: "65%";
-  }
-
-  .bar .info .addphp::before {
-    content: "50%";
-  }
-
-  .bar .info .addjs::before {
-    content: "50%";
-  }
-
 
 
   .sub-title {
     font-size: 50px;
-    padding-bottom: 50px;
+
   }
 
-  .prj-list div {
-    padding: 20px;
-  }
 
-  .prj-list p {
-    margin-top: 40px;
-  }
 
   .contacts {
     padding-top: 30px;
   }
 
   .contact-list {
-    /* padding-left: 50px;
-    padding-top: 50px; */
     text-align: center;
     padding-top: 10px;
     margin-bottom: 40px;
@@ -401,16 +373,13 @@
     font-size: 17px;
     font-weight: 200;
     margin-left: 12px;
-    padding: 10px 4px 0 0;
+    padding: 10px 10px 0 0;
   }
 
   .navbar a::after {
     content: "\a";
     white-space: pre;
   }
-
-
-
 
 
   .home {
@@ -461,6 +430,16 @@
     margin-right: 0;
   }
 
+  .subtitle {
+    padding-top: 80px;
+  }
+
+  embed {
+    display: none;
+  }
+
+
+
   .abtbtn-box:hover {
     box-shadow: 0 0 5px rgb(194, 56, 187), 0 0 10px rgb(194, 56, 187), 0 0 15pc rgb(194, 56, 187), 0 0 20px rgb(194, 56, 187), 0 0 25px rgb(194, 56, 187);
   }
@@ -470,34 +449,13 @@
     font-size: 50px;
     text-align: center;
     margin: 0;
-
+    padding-bottom: 20px;
   }
 
 
-
-  .container1 {
-    max-width: 90%;
-    margin: 0;
-    height: 100vh;
-    overflow-y: hidden;
-    padding: 0;
-  }
-
-  .container2 {
-    /* width: 600px;
-    max-height: 500px;
-    padding: 10px;
-    margin-left: 0px; */
-    overflow-y: hidden;
-    margin: auto;
-    max-width: 100%;
-    padding-top: 15px;
-    padding-right: 14px;
-
-  }
 
   .code {
-    width: 580px;
+    width: auto;
     height: auto;
     margin-left: 0;
     padding-left: 0;
@@ -506,7 +464,9 @@
 
 
   .radial-bar .text {
-    margin-left: 25px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: inherit;
   }
 
   .text .text-1 {
@@ -519,35 +479,8 @@
 
 
   .radial-bars .radial-bar {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
-
-
-
-
-
-
-  .bar .info .addhtml::before {
-    content: "80%";
-  }
-
-  .bar .info .addcss::before {
-    content: "80%";
-  }
-
-  .bar .info .addbootstrap::before {
-    content: "65%";
-  }
-
-  .bar .info .addphp::before {
-    content: "50%";
-  }
-
-  .bar .info .addjs::before {
-    content: "50%";
-  }
-
-
 
 
   .sub-title {

@@ -93,7 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["nb1"]) && isset($_GET["
         }
 
         form label {
-            font-size: 20px;
+            font-size: 30px;
             font-weight: bold;
         }
 
