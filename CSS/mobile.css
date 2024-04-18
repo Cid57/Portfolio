@@ -1,6 +1,18 @@
+@media (max-width: 1280px) {
+  .navbar a {
+    padding: 10px 80px 0 0;
+  }
+
+
+}
+
 @media (max-width: 1024px) {
   .prj-list>div {
     width: calc(50% - 20px);
+  }
+
+  .navbar a {
+    padding: 10px 80px 0 0;
   }
 }
 
@@ -258,9 +270,9 @@
   }
 
 
-  #Competences {
+  /* #Competences {
     height: 820px;
-  }
+  } */
 
 
   .heading1 {
