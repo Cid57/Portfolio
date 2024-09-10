@@ -24,12 +24,12 @@
   }
 
 
-  .navbar a {
+  /* .navbar a {
     font-size: 20px;
     font-weight: 200;
     margin-left: 0px;
 
-  }
+  } */
 
   .navbar a::after {
     content: "\a";
@@ -94,10 +94,10 @@
   }
 
   .navbar a {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 200;
-    margin-left: 0px;
-    padding: 10px 16px 0 0;
+    /* margin-left: 12px; */
+    padding: 10px 10px 0 10px;
   }
 
   .navbar a::after {
@@ -180,7 +180,6 @@
     padding-bottom: 30px;
     padding-top: 50px;
   }
-
 
 
   .abtbtn-box:hover {
@@ -375,8 +374,8 @@
   .navbar a {
     font-size: 17px;
     font-weight: 200;
-    margin-left: 12px;
-    padding: 10px 10px 0 0;
+    /* margin-left: 12px; */
+    padding: 10px 10px 0 15px;
   }
 
   .navbar a::after {
@@ -530,5 +529,13 @@
 
   .top i {
     color: #000;
+  }
+}
+
+/* Réduction de la taille des box des projets sur grand écran */
+@media (min-width: 1200px) {
+  .prj-list>div {
+    width: calc(25% - 20px);
+
   }
 }
