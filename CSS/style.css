@@ -52,7 +52,7 @@ body {
 .navbar a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px 50px 0 0;
   animation: slideUP .5s ease forwards;
   animation-delay: calc(.2s * var(--i));
@@ -105,6 +105,7 @@ body {
   animation-delay: 1s;
   letter-spacing: 3px;
   opacity: 0;
+  margin-top: 20px;
 }
 
 .home-content a {
@@ -114,13 +115,13 @@ body {
   animation-delay: calc(.2s * var(--i));
 }
 
-.home-content h1 h2{
+.home-content h1 {
   text-align: center;
   font-size: 50px;
   font-weight: 700;
   letter-spacing: 5px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   opacity: 0;
   animation: slideBottom 1s ease forwards;
   animation-delay: 1s;
@@ -244,7 +245,6 @@ body {
 
 
 
-
 .portfolio-img {
   display: flex;
   justify-content: space-around;
@@ -266,13 +266,14 @@ body {
 .abtbtn-box2 {
   cursor: pointer;
   position: relative;
-  padding: 8px 15px;
+  padding: 7px 13px;
   background: rgb(115, 87, 219);
   background: linear-gradient(194deg, rgba(115, 87, 219, 1) 31%, rgba(252, 70, 227, 1) 100%);
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 8px;
   transition: all 0.5s;
   margin: 36px auto;
+  margin-bottom: 20px;
   display: block;
   width: fit-content;
   text-decoration: none;
@@ -334,7 +335,7 @@ body {
   text-decoration: none;
   color: white;
   overflow: hidden;
-  max-width: 100%;
+  width: 120px;
 }
 
 .abtbtn-box1:after,
@@ -378,6 +379,13 @@ body {
 
 
 
+/* .sec {
+  margin-top: 80px;
+  display: flex;
+  padding-bottom: 0px;
+  justify-content: space-around;
+} */
+
 .container {
   margin-top: 80px;
   padding: 40px;
@@ -391,7 +399,13 @@ body {
   margin-left: 100px;
 }
 
-
+.heading1 {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 5px;
+  margin-bottom: 40px;
+}
 
 .bar {
   font-size: 23px;
@@ -402,17 +416,18 @@ body {
 #Competences {
   background: rgba(0, 0, 0, .3) url(../IMG/code-2.jpg);
   background-blend-mode: darken;
-  background-position: center left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+ 
 }
 
 .subtitle {
   text-align: center;
-  font-size: 3.43rem;
+  font-size: 3rem;
   padding-top: 100px;
   margin-top: 90px;
+  margin-bottom: 30px;
 }
 
 .subtitle span {
@@ -420,19 +435,26 @@ body {
   background-image: linear-gradient(107deg, #f74986, #5e54f3);
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 3.43rem;
+  font-size: 3rem;
 }
 
-.sec {
+
+
+/* .sec {
   margin-top: 80px;
   display: flex;
   padding-bottom: 0px;
   justify-content: space-around;
+} */
+
+/* .container1 {
+  width: 50%;
 }
 
 .container1 {
-  width: 50%;
-}
+  width: 600px;
+
+} */
 
 .heading1 {
   text-align: center;
@@ -442,22 +464,33 @@ body {
   margin-bottom: 40px;
 }
 
+
+
+
 .Technical-icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+ padding: 40px 0;
+  max-width: 70%;
+  margin: auto;
+} 
 
-}
 
 .Technical-icons .icon {
-  flex: 1 1 18%;
+  flex: 1 1 calc(33.33% - 40px);
+  /* 3 icônes par ligne */
+  max-width: calc(33.33% - 40px);
+  /* Empêche les icônes de dépasser la taille */
+  box-sizing: border-box;
+  /* Assure que le padding ne casse pas la mise en page */
   text-align: center;
   margin: 10px 0;
 }
 
 .Technical-icons .icon i {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
 }
 
 .Technical-icons .icon .info {
@@ -465,10 +498,14 @@ body {
   font-size: 1.2rem;
 }
 
+
 .Technical-icons .icon img {
   width: 50px;
   margin: 0 auto;
 }
+
+
+
 
 .text-white {
   color: white !important;
@@ -476,13 +513,71 @@ body {
 
 
 
+
+
+
+.path {
+  stroke-width: 10;
+  stroke: #7357DB;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+
+.path.path-1 {
+  animation: animate-path1 1s 1s linear forwards;
+}
+
+.path.path-2 {
+  animation: animate-path2 1s 1s linear forwards;
+}
+
+.path.path-3 {
+  animation: animate-path3 1s 1s linear forwards;
+}
+
+.path.path-4 {
+  animation: animate-path4 1s 1s linear forwards;
+}
+
+.radial-bar .percentage {
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+.radial-bar .text {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 15%;
+  bottom: 5px;
+  transform: translateX(-50px);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+.radial-bar .text-1 {
+  text-align: center;
+  padding-right: 30px;
+}
+
 #Projets {
   background-color: #0f0d25;
 }
 
 .sub-title {
   text-align: center;
-  font-size: 3.43rem;
+  font-size: 3rem;
   padding-top: 0px;
   padding-bottom: 70px;
 }
@@ -492,20 +587,81 @@ body {
   background-image: linear-gradient(107deg, #f74986, #5e54f3);
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 3.43rem;
+  font-size: 3rem;
 }
 
+
+.prj-list h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.prj-list p {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #ddd;
+}
+
+.prj-list i {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #7357DB;
+}
+
+
 .prj-list div {
+  background-color: rgba(115, 87, 219, 0.1);
+  padding: 30px;
+  font-size: 13px;
+  border-radius: 20px;
+  transition: background 0.5s, transform 0.5s, box-shadow 0.3s;
+  border: 2px solid #7357DB;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.prj-list div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: rgba(115, 87, 219, 0.2);
+ 
+}
+
+.prj-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 20px;
+
+}
+
+.prj-list>div {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* .prj-list div {
   background-color: transparent;
-  /* background-color: #121212; */
-  padding: 40px;
+  padding: 30px;
   font-size: 13px;
   font-weight: 13px;
   border-right: 10px;
   border-radius: 20px;
   transition: background 0.5s, transform 0.5s;
   border: #7357DB 5px solid;
-  text-align: center;
+
+
+
 }
 
 .prj-list {
@@ -526,7 +682,7 @@ body {
 }
 
 .prj-list h2 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -560,7 +716,7 @@ body {
 
 .prj-list div:hover {
   transform: translateY(-2px);
-}
+} */
 
 .contacts {
   display: grid;
@@ -583,10 +739,10 @@ body {
 }
 
 .contact-text h2 {
-  font-size: 3.43rem;
+  font-size: 3rem;
   line-height: normal;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .contact-text h2 span {
@@ -594,7 +750,7 @@ body {
   background-image: linear-gradient(107deg, #f74986, #5e54f3);
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 3.43rem;
+  font-size: 3rem;
 }
 
 .contact-text h4 {
@@ -610,6 +766,7 @@ body {
   text-align: center;
   padding-top: 10px;
   margin-bottom: 40px;
+  margin-right: 20px;
 }
 
 .contact-list a {
@@ -635,9 +792,7 @@ body {
   padding: 10px;
 }
 
-.contact-icons {
-  padding-left: 10px;
-}
+
 
 .contact-icons i {
   display: inline-flex;

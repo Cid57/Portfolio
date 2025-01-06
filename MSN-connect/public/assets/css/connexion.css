@@ -1,0 +1,156 @@
+/* Formulaire de CONNEXION */
+.inscription {
+  height: 100vh;
+  margin: 0;
+  color: #6a6f8c;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  background-image: url(../img/fond-connexion.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Conteneur principal */
+.login-wrap {
+  width: 100%;
+  margin: auto;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  transform: translateY(50px);
+}
+
+header {
+  border-radius: 20px;
+}
+
+/* Conteneur interne */
+.login-html {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Titre Connexion */
+.login-html .tab {
+  font-family: "Sedan SC", serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 25px;
+  display: inline-block;
+  border-bottom: 2px solid #9da7d2;
+}
+
+/* Champs du formulaire */
+.login-form .group {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.login-form .group .label {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-form .group .input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  transition: border 0.3s ease;
+}
+
+.login-form .group .input:focus {
+  border-color: #9da7d2;
+  box-shadow: 0 0 5px rgba(157, 167, 210, 0.5);
+  outline: none;
+}
+
+/* Bouton Se connecter */
+.login-form .group .button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #9da7d2, #7a83ba);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.login-form .group .button:hover {
+  background: #7a83ba;
+}
+
+/* Lien Mot de passe oublié */
+.foot-lnk a {
+  color: #9da7d2;
+  font-size: 14px;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.foot-lnk a:hover {
+  color: #7a83ba;
+}
+
+/* Ligne horizontale */
+.hr {
+  height: 1px;
+  margin: 20px 0;
+  background: #ddd;
+  border: none;
+}
+
+/* Icônes d'oeil pour le mot de passe */
+.mdp-icon {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -30px;
+  margin-bottom: 10px;
+}
+
+.eye,
+.eye-off {
+  cursor: pointer;
+  color: #9da7d2;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.eye:hover,
+.eye-off:hover {
+  color: #7a83ba;
+}
+
+/* Adaptation mobile */
+@media (max-width: 480px) {
+  .login-wrap {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .login-html .tab {
+    font-size: 20px;
+  }
+
+  .login-form .group .label {
+    font-size: 12px;
+  }
+
+  .login-form .group .input,
+  .login-form .group .button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

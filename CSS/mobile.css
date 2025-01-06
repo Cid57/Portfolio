@@ -1,10 +1,74 @@
 @media (max-width: 1280px) {
-  .navbar a {
+  /* .navbar a {
     padding: 10px 80px 0 0;
+  } */
+
+
+}
+
+
+/* Pour l'iPad Pro 12.9" et autres tablettes avec des écrans similaires */
+@media (min-width: 834px) and (max-width: 1024px) {
+
+  .contact-list a {
+    font-size: 30px;
+  }
+
+    .prj-list p {
+      font-size: 20px;
+    }
+
+    .prj-list h2 {
+      font-size: 30px;
+    }
+
+
+  .Technical-icons {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 90%;
+  }
+
+  .portfolio p{
+  max-width: 93%;
+  
+  }
+
+
+.Technical-icons .icon {
+  max-width: calc(33.33% - 20px);
+  flex: 1 1 calc(33.33% - 20px);
+  text-align: center;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+
+  .Technical-icons .icon i,
+  .Technical-icons .icon img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .Technical-icons .icon img {
+    width: 45px;
+
+  }
+
+  .Technical-icons .icon i {
+    font-size: 4rem;
+
   }
 
 
 }
+
+
+
+
 
 @media (max-width: 1024px) {
   .prj-list>div {
@@ -23,13 +87,6 @@
     display: block;
   }
 
-
-  /* .navbar a {
-    font-size: 20px;
-    font-weight: 200;
-    margin-left: 0px;
-
-  } */
 
   .navbar a::after {
     content: "\a";
@@ -54,6 +111,10 @@
     overflow-y: inherit;
   }
 
+  .portfolio p {
+    max-width: inherit;
+  }
+
 
 
   .home-content a {
@@ -71,17 +132,12 @@
   }
 
   .code {
-    /* width: 500px; */
     height: auto;
     margin-left: 0;
     padding-left: 0;
   }
 
-  .sec {
-    display: flex;
-    margin: 50px;
-    width: auto;
-  }
+
 
   .prj-list>div {
     margin-bottom: 40px;
@@ -96,7 +152,6 @@
   .navbar a {
     font-size: 19px;
     font-weight: 200;
-    /* margin-left: 12px; */
     padding: 10px 10px 0 10px;
   }
 
@@ -110,7 +165,7 @@
   }
 
   .home-content {
-    padding-top: 100px;
+    padding-top: 120px;
   }
 
   .home-content h1 {
@@ -190,7 +245,7 @@
 
   .abtbtn-box2 {
     padding: 8px 16px;
-    font-size: 20px;
+   
     border-radius: 8px;
   }
 
@@ -269,9 +324,6 @@
   }
 
 
-  /* #Competences {
-    height: 820px;
-  } */
 
 
   .heading1 {
@@ -281,19 +333,12 @@
   }
 
 
-  .bar {
-    font-size: 25px;
-  }
-
-  .Technical-bars .bar {
-    padding: 0;
-  }
-
 
   .bar {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-size: 25px;
   }
 
 
@@ -310,14 +355,14 @@
 
   .contact-list {
     text-align: center;
-    padding-top: 10px;
-    margin-bottom: 40px;
+    padding-top: 20px;
+    margin-bottom: 30px;
   }
 
 
 
   .contact-icons i {
-    margin-left: 72px;
+    margin-left: 67px;
   }
 
   .contacts h2 {
@@ -328,13 +373,13 @@
     font-size: 30px;
   }
 
+    .contact-text img {
+      margin-left: 76px;
+    }
+
   .contact-list i {
     font-size: 15px;
     padding: 5px 5px 0 0;
-  }
-
-  .contact-list a {
-    padding-right: 10px;
   }
 
 
@@ -374,7 +419,6 @@
   .navbar a {
     font-size: 17px;
     font-weight: 200;
-    /* margin-left: 12px; */
     padding: 10px 10px 0 15px;
   }
 
@@ -432,9 +476,7 @@
     margin-right: 0;
   }
 
-  /* .subtitle {
-    padding-top: 80px;
-  } */
+
 
   embed {
     display: none;
@@ -492,7 +534,6 @@
 
 
 
-
   .contacts h2 {
     font-size: 50px;
   }
@@ -539,3 +580,62 @@
 
   }
 }
+
+
+
+
+
+ @media (max-width: 768px) {
+   .Technical-icons {
+     padding: 30px 0;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 10px;
+     overflow-x: hidden;
+     max-width: inherit;
+   }
+
+   .Technical-icons .icon {
+     max-width: calc(50% - 20px);
+     flex: 1 1 calc(50% - 20px);
+     text-align: center;
+     margin: 10px 0;
+     box-sizing: border-box;
+   }
+
+   .Technical-icons .icon i,
+   .Technical-icons .icon img {
+     display: block;
+     margin: 0 auto;
+     max-width: 100%;
+  
+   }
+
+   .Technical-icons .icon img {
+     width: 35px;
+  
+   }
+
+   .Technical-icons .icon i {
+     font-size: 2rem;
+    
+   }
+ }
+
+ /* Adaptation pour très petits écrans */
+ @media (max-width: 480px) {
+   .Technical-icons .icon {
+     max-width: calc(100% - 20px);
+  
+   }
+
+   .Technical-icons .icon img {
+     width: 30px;
+   }
+
+   .Technical-icons .icon i {
+     font-size: 1.8rem;
+
+   }
+ }
