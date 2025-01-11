@@ -1,0 +1,30 @@
+/* Styles pour les liens de navigation */
+.nav-links a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #f74986, #B85EE6);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-links a.active {
+    color: #B85EE6;
+}
+
+/* Animation pour le hover */
+.nav-links a:hover {
+    color: #B85EE6;
+}

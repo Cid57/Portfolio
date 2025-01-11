@@ -4,48 +4,101 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https:; img-src 'self' https: data:;"
+    />
     <title>Portfolio - Cindy Singer</title>
-    <link rel="shortcut icon" type="image/png" href="ic.png" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./IMG/favicon.ico" type="image/x-icon" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/mobile.css" />
+    <link rel="stylesheet" href="./CSS/chatbot.css" />
+    <link rel="stylesheet" href="./CSS/amelioration.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link rel="shortcut icon" href="./IMG/favicon.ico" type="image/x-icon" />
+
+    <!-- Typed.js -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- FontAwesome -->
     <script
       src="https://kit.fontawesome.com/d8f3c63712.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Découvrez le portfolio de Cindy Singer, Développeuse Full Stack. Passionnée par le numérique, je conçois des applications web performantes et adaptées aux besoins des entreprises. Basée entre le Luxembourg et Metz."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Cindy Singer" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Portfolio - Cindy Singer" />
+    <meta
+      property="og:description"
+      content="Découvrez le portfolio de Cindy Singer, Développeuse Full Stack, spécialisée dans la création d'applications web performantes et sur mesure."
+    />
+    <meta
+      property="og:image"
+      content="https://www.cindysinger.fr/IMG/MOI.jpg"
+    />
+    <meta property="og:url" content="https://www.cindysinger.fr" />
+    <meta property="og:type" content="website" />
   </head>
 
   <body>
     <header class="header">
       <nav class="navbar">
-        <a href="#A-propos">A propos</a>
-        <a href="#Competences">Compétences</a>
-        <a href="#Projets">Projets</a>
-        <a href="#Contact">Contact</a>
+        <div class="menu-burger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#About">À propos</a></li>
+          <li><a href="#Points-forts">Points forts</a></li>
+          <li><a href="#Projets">Projets</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
-    <section class="home" id="Home">
+    <section
+      class="home"
+      id="Home"
+      data-aos="fade-down"
+      data-aos-duration="1500"
+    >
       <div class="home-content">
-        <h1>Cindy Singer</h1>
-        <h4>
+        <h1 data-aos="fade-right" data-aos-delay="200">Cindy Singer</h1>
+        <h4 data-aos="fade-right" data-aos-delay="400">
           DEVELOPPEUSE WEB ET WEB MOBILE<br />
           <span class="text"></span>
         </h4>
-        <p>
-          Passionnée par le numérique, j'ai entrepris une reconversion afin
-          d'exercer un métier qui me passionne : Le Développement Web.
+        <p data-aos="fade-up" data-aos-delay="600">
+          Je conçois et développe des applications web adaptées aux besoins des
+          entreprises. Passionnée par le numérique, je continue de renforcer mes
+          compétences pour créer des solutions performantes et intuitives.
         </p>
-        <div class="home-sci">
+        <div class="home-sci" data-aos="fade-up" data-aos-delay="800">
           <a href="https://www.linkedin.com/in/cindy-singer/" target="_blank"
             ><i class="bx bxl-linkedin"></i
           ></a>
@@ -53,360 +106,517 @@
             ><i class="bx bxl-github"></i
           ></a>
         </div>
-        <a href="CV-Singer-Cindy.pdf" class="abtbtn-box1" target="_blank"
+        <a href="CV-DEV-SINGER-CINDY.pdf" class="abtbtn-box1" target="_blank"
           >Mon CV</a
         >
       </div>
     </section>
 
-    <section id="A-propos">
+    <section id="About" data-aos="fade" data-aos-duration="1200">
       <div class="portfolio">
-        <h2 class="sub-title">A<span> Propos</span></h2>
-        <div class="portfolio-img">
+        <h1 class="section-title" data-aos="fade-up" data-aos-duration="800">
+          À <span>Propos</span>
+        </h1>
+        <div
+          class="portfolio-img"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <img
             src="./IMG/MOI.jpg"
             class="abt-res"
             alt="Photo de Cindy Singer"
+            loading="lazy"
+            width="auto"
+            height="auto"
           />
           <embed
-            src="CV-Singer-Cindy.pdf"
+            src="CV-DEV-SINGER-CINDY.pdf"
             type="application/pdf"
             width="auto"
             height="auto"
           />
         </div>
-        <div class="portfolio">
-          <p>
-            Je suis Cindy, une passionnée en formation pour devenir développeuse
-            web. Après un an de formation intensive, je suis maintenant à la fin
-            de mon parcours. Ma détermination à apprendre et mon amour pour la
-            création de solutions numériques font de moi une candidate motivée
-            et enthousiaste à explorer le monde du développement web.
+        <div class="introduction">
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-offset="100">
+            Je m'appelle <strong>Cindy Singer</strong>, 38 ans,
+            <strong class="highlight">Développeuse Full Stack</strong>. Après
+            une reconversion professionnelle intensive d'une durée d'un an,
+            couronnée par l'obtention de mon diplôme RNCP 5 à
+            <strong>Metz Numeric School</strong>, je me spécialise dans la
+            conception et le développement d'applications web sur mesure,
+            adaptées aux besoins des entreprises.
           </p>
-          <br />
-          <p>
-            Au cours de ma formation, j'ai plongé dans l'univers captivant du
-            développement web, où j'ai acquis les bases telles que HTML, CSS,
-            JavaScript, PHP et SQL. Chaque projet et chaque ligne de code
-            représentent pour moi des occasions d'apprentissage, et je m'efforce
-            continuellement d'améliorer mes compétences pour concevoir des sites
-            web fonctionnels et attrayants.
+          <p
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="50"
+            data-aos-delay="200"
+          >
+            Je suis actuellement
+            <strong class="highlight"
+              >Développeuse Full Stack chez Digital Factory</strong
+            >
+            au Luxembourg, où je contribue au développement de
+            <strong>Teeqode</strong>, une plateforme SaaS innovante qui facilite
+            la conformité et la gestion pour les entreprises, développée en
+            <strong>Laravel</strong> où je continue d'approfondir mes
+            connaissances.
           </p>
-          <br />
-          <p>
-            Récemment, j'ai eu l'opportunité de réaliser un stage de deux mois
-            dans une agence web. Durant cette période, j'ai travaillé sur des
-            projets sur mesure utilisant PHP, AJAX, jQuery et JavaScript, le
-            tout sur WinSCP. J'ai également beaucoup utilisé MySQL avec
-            PHPMyAdmin et principalement du PHP. J'ai géré plusieurs sites
-            WordPress, assumant la responsabilité d'un projet où j'ai collaboré
-            directement avec le client. Cette expérience m'a permis de
-            comprendre l'importance de la collaboration et de la résolution de
-            problèmes.
+          <p
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="50"
+            data-aos-delay="300"
+          >
+            Mon parcours professionnel m'a permis de développer une expertise
+            dans plusieurs domaines clés du développement web, notamment :
           </p>
-          <br />
-          <p>
-            Ma philosophie consiste à transformer les défis en opportunités
-            d'apprentissage, car je crois fermement que chaque erreur est une
-            occasion de s'améliorer. Bien que je sois novice, je suis déterminée
-            à rester informée sur les tendances émergentes et à explorer des
-            technologies plus avancées. Mon objectif est de développer mes
-            compétences dans des domaines tels que la gestion de bases de
-            données, le déploiement sur les serveurs et d'autres aspects
-            cruciaux du développement web.
-          </p>
-          <br />
-          <p>
-            Dans cette perspective, je suis à la recherche active d'un emploi à
-            partir d'octobre 2024. Cette opportunité me permettra de mettre en
-            pratique mes connaissances et d'acquérir une expérience concrète au
-            sein d'une entreprise dynamique. Mon engagement envers
-            l'amélioration continue et ma passion pour la création de solutions
-            web font de moi une candidate enthousiaste à l'idée de contribuer à
-            des projets innovants.
+          <div
+            class="skills-grid"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <div
+              class="skill-card"
+              data-aos="flip-left"
+              data-aos-duration="1200"
+              data-aos-delay="200"
+            >
+              <strong>Front-end</strong>
+              <div class="skill-icons">
+                <i class="fab fa-html5" title="HTML5"></i>
+                <i class="fab fa-css3-alt" title="CSS3"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+                <i class="fab fa-bootstrap" title="Bootstrap"></i>
+                <i class="fab fa-react" title="React"></i>
+                <img
+                  src="https://cdn.worldvectorlogo.com/logos/next-js.svg"
+                  alt="Next.js"
+                  class="next-icon"
+                  title="Next.js"
+                />
+              </div>
+              HTML5, CSS3, JavaScript, Bootstrap, React, Next.js
+            </div>
+            <div
+              class="skill-card"
+              data-aos="flip-left"
+              data-aos-duration="1200"
+              data-aos-delay="600"
+            >
+              <strong>Back-end</strong>
+              <div class="skill-icons">
+                <i class="fab fa-php" title="PHP"></i>
+                <i class="fab fa-laravel" title="Laravel"></i>
+                <i class="fas fa-database" title="MySQL"></i>
+              </div>
+              PHP, Laravel, MySQL
+            </div>
+            <div
+              class="skill-card"
+              data-aos="flip-left"
+              data-aos-duration="1200"
+              data-aos-delay="1000"
+            >
+              <strong>Outils de développement</strong>
+              <div class="skill-icons">
+                <i class="fab fa-git-alt" title="Git"></i>
+                <i class="fab fa-github" title="GitHub"></i>
+                <i class="fas fa-code" title="VS Code"></i>
+                <i class="fas fa-server" title="WampServer"></i>
+                <i class="fas fa-edit" title="PHPStorm"></i>
+              </div>
+              Git, GitHub, VS Code, WampServer, PHPStorm
+            </div>
+            <div
+              class="skill-card"
+              data-aos="flip-left"
+              data-aos-duration="1200"
+              data-aos-delay="1400"
+            >
+              <strong>Méthodologies</strong>
+              Agile, Scrum, Gestion de projet
+            </div>
+          </div>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="50"
+            data-aos-delay="500"
+          >
+            Je suis
+            <strong class="highlight"
+              >passionnée par l'apprentissage continu</strong
+            >
+            et je m'efforce constamment d'améliorer mes compétences et de rester
+            à jour avec les dernières technologies. Mon objectif est de créer
+            des applications web performantes, sécurisées et conviviales qui
+            répondent aux besoins spécifiques des utilisateurs.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="Competences">
-      <h1 class="subtitle">
-        Mes <span>Compétences</span> et <span> Outils</span>
-      </h1>
-      <div class="code">
-        <div class="sec">
-          <div class="container1">
-            <div class="Technical-icons">
-              <div class="icon">
-                <i class="bx bxl-html5" style="color: #c9332e"></i>
-                <div class="info"><span>HTML</span></div>
-              </div>
-              <div class="icon">
-                <i class="bx bxl-css3" style="color: #147bbc"></i>
-                <div class="info"><span>CSS</span></div>
-              </div>
-              <div class="icon">
-                <i class="fa-brands fa-bootstrap" style="color: #7910f2"></i>
-                <div class="info"><span>Bootstrap</span></div>
-              </div>
-              <div class="icon">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
-                  alt="Php logo"
-                  style="width: 80px"
-                />
-                <div class="info"><span class="text-white">PHP</span></div>
-              </div>
-              <div class="icon">
-                <i class="fa-brands fa-js" style="color: yellow"></i>
-                <div class="info"><span>JavaScript</span></div>
-              </div>
-              <div class="icon">
-                <i class="fa-brands fa-github" style="color: #fff"></i>
-                <div class="info"><span>GitHub</span></div>
-              </div>
-              <div class="icon">
-                <i class="fa-solid fa-database" style="color: #3612ff"></i>
-                <div class="info"><span>SQL (MySQL)</span></div>
-              </div>
-              <div class="icon">
-                <i class="fa-brands fa-git-alt" style="color: #f34f29"></i>
-                <div class="info"><span>Git</span></div>
-              </div>
-
-              <div class="icon">
-                <i class="fa-solid fa-server" style="color: #0a74da"></i>
-                <div class="info"><span>WAMP</span></div>
-              </div>
-              <div class="icon">
-                <i class="fa-solid fa-database" style="color: #e38c00"></i>
-                <div class="info"><span>phpMyAdmin</span></div>
-              </div>
-              <div class="icon">
-                <i class="fa-brands fa-trello" style="color: #0079bf"></i>
-                <div class="info"><span>Trello</span></div>
-              </div>
-              <div class="icon">
-                <img
-                  src="IMG\winscp.jpg"
-                  alt="WinSCP logo"
-                  style="width: 50px"
-                />
-                <div class="info"><span>WinSCP</span></div>
-              </div>
-              <div class="icon">
-                <i class="fa-brands fa-figma" style="color: #f24e1e"></i>
-                <div class="info"><span>Figma</span></div>
-              </div>
-            </div>
+    <section id="Points-forts" data-aos="fade-up" data-aos-duration="1000">
+      <div class="strengths-container">
+        <h1 class="section-title" data-aos="fade-down">
+          Mes <span>Points Forts</span>
+        </h1>
+        <div class="strengths-grid">
+          <div
+            class="strength-card"
+            data-aos="flip-left"
+            data-aos-duration="2000"
+            data-aos-delay="400"
+          >
+            <i class="fas fa-lightbulb"></i>
+            <h3>Créativité</h3>
+            <p>
+              Capacité à proposer des solutions innovantes et à penser
+              différemment pour résoudre les problèmes.
+            </p>
+          </div>
+          <div
+            class="strength-card"
+            data-aos="flip-left"
+            data-aos-duration="2000"
+            data-aos-delay="800"
+          >
+            <i class="fas fa-users"></i>
+            <h3>Travail d'équipe</h3>
+            <p>
+              Excellente aptitude à collaborer et à communiquer efficacement au
+              sein d'une équipe.
+            </p>
+          </div>
+          <div
+            class="strength-card"
+            data-aos="flip-left"
+            data-aos-duration="2000"
+            data-aos-delay="1200"
+          >
+            <i class="fas fa-brain"></i>
+            <h3>Adaptabilité</h3>
+            <p>
+              Capacité à m'adapter rapidement aux nouvelles technologies et aux
+              changements.
+            </p>
+          </div>
+          <div
+            class="strength-card"
+            data-aos="flip-left"
+            data-aos-duration="2000"
+            data-aos-delay="1600"
+          >
+            <i class="fas fa-rocket"></i>
+            <h3>Motivation</h3>
+            <p>
+              Passion pour le développement web et désir constant d'apprendre et
+              de progresser.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="Projets">
-      <div class="project">
-        <div class="container">
-          <h1 class="sub-title">Mes<span> Projets</span></h1>
-          <div class="prj-list">
-            <div class="box-front">
-              <i class="fa-solid fa-code" style="color: rgb(194, 56, 187)"></i>
-              <h2>TodoList Javascript</h2>
-              <p>
-                Application de gestion de tâches développée uniquement en
-                JavaScript.
-              </p>
+    <section id="Projets" data-aos="fade-up" data-aos-duration="1000">
+      <div class="project-container">
+        <h1 class="section-title" data-aos="fade-down">
+          Mes <span>Projets</span>
+        </h1>
+        <div class="projects-grid">
+          <!-- TodoList Javascript -->
+          <div
+            class="project-card"
+            data-aos="zoom-in-up"
+            data-aos-duration="3000"
+            data-aos-delay="100"
+          >
+            <h2>TodoList Javascript</h2>
+            <p>Application de gestion de tâches développée en JavaScript</p>
+            <div class="project-links">
               <a
                 href="todo-list/todolist.html"
-                class="abtbtn-box2"
+                class="site-link"
                 target="_blank"
-                >Lien site web</a
               >
+                <i class="fas fa-globe"></i>
+                Lien site web
+              </a>
               <a
                 href="https://github.com/Cid57/TODO_LIST_JAVASCRIPT"
-                class="abtbtn-box2"
+                class="github-link"
                 target="_blank"
-                >Lien Github</a
               >
+                <i class="fab fa-github"></i>
+                Lien Github
+              </a>
             </div>
+          </div>
 
-            <div>
-              <i class="fa-solid fa-otter" style="color: rgb(194, 56, 187)"></i>
-              <h2>Projet Madagascar</h2>
-              <p>
-                Projet de site web créé avec HTML, CSS (Bootstrap) et JavaScript (Node_js).
-              </p>
-              <a href="madagascar/page.html" class="abtbtn-box2" target="_blank"
-                >Lien site web</a
-              >
+          <!-- Projet Madagascar -->
+          <div
+            class="project-card"
+            data-aos="zoom-in-up"
+            data-aos-duration="3000"
+            data-aos-delay="200"
+          >
+            <h2>Projet Madagascar</h2>
+            <p>
+              Projet de site web créé avec HTML, CSS (Bootstrap) et JavaScript
+              (Node.js)
+            </p>
+            <div class="project-links">
+              <a href="madagascar/index.html" class="site-link" target="_blank">
+                <i class="fas fa-globe"></i>
+                Lien site web
+              </a>
               <a
                 href="https://github.com/Cid57/ProjetMadagascar"
-                class="abtbtn-box2"
+                class="github-link"
                 target="_blank"
-                >Lien Github</a
               >
+                <i class="fab fa-github"></i>
+                Lien Github
+              </a>
             </div>
+          </div>
 
-            <div>
-              <i class="fa-solid fa-otter" style="color: rgb(194, 56, 187)"></i>
-              <h2>Evalia</h2>
-              <p>Plateforme en cours de test, développée en PHP.</p>
+          <!-- Evalia -->
+          <div
+            class="project-card"
+            data-aos="zoom-in-up"
+            data-aos-duration="3000"
+            data-aos-delay="300"
+          >
+            <h2>Evalia</h2>
+            <p>Plateforme en cours de test, développée en HTML, CSS et PHP</p>
+            <div class="project-links">
               <a
                 href="evalia/public/index.php"
-                class="abtbtn-box2"
+                class="site-link"
                 target="_blank"
-                >Lien site web</a
               >
+                <i class="fas fa-globe"></i>
+                Lien site web
+              </a>
             </div>
+          </div>
 
-            <div>
-              <i class="fa-solid fa-xmark" style="color: rgb(194, 56, 187)"></i>
-
-              <h2>Table de Multiplication en PHP</h2>
+          <!-- Table de Multiplication -->
+          <div
+            class="project-card"
+            data-aos="zoom-in-up"
+            data-aos-duration="3000"
+            data-aos-delay="400"
+          >
+            <h2>Table de Multiplication</h2>
+            <p>Petite calculatrice en PHP, réalisée au sein de ma formation</p>
+            <div class="project-links">
+              <a href="#" class="site-link" target="_blank">
+                <i class="fas fa-globe"></i>
+                Lien site web
+              </a>
               <a
                 href="table-multiplication/multiplication.php"
-                class="abtbtn-box2"
+                class="github-link"
                 target="_blank"
-                >Lien site web</a
               >
-              <a
-                href="https://github.com/Cid57/Table-multiplication-php"
-                class="abtbtn-box2"
-                target="_blank"
-                >Lien Github</a
-              >
+                <i class="fab fa-github"></i>
+                Lien Github
+              </a>
             </div>
+          </div>
 
-            <div>
-              <i
-                class="fa-solid fa-comment-dots"
-                style="color: rgb(194, 56, 187)"
-              ></i>
-              <h2>
-                Messagerie interne MSN Connect ( En cours de test sur serveur )
-              </h2>
-              <p>Projet fil rouge réalisé pour le titre RNCP.</p>
+          <!-- MSN Connect -->
+          <div
+            class="project-card"
+            data-aos="zoom-in-up"
+            data-aos-duration="3000"
+            data-aos-delay="500"
+          >
+            <h2>MSN Connect</h2>
+            <p>Messagerie interne, projet réalisé pour le titre RNCP</p>
+            <div class="project-links">
+              <a href="#" class="site-link" target="_blank">
+                <i class="fas fa-globe"></i>
+                Accéder à MSN Connect
+              </a>
               <a
                 href="https://cindysinger.fr/MSN-connect/public/index.php"
-                class="abtbtn-box2"
+                class="github-link"
                 target="_blank"
-                >Lien site web</a
               >
-
-              <a
-                href="https://github.com/Cid57/MSN-CONNECT-Projet-fil-rouge"
-                class="abtbtn-box2"
-                target="_blank"
-                >Lien Github</a
-              >
+                <i class="fab fa-github"></i>
+                Lien Github
+              </a>
             </div>
+          </div>
 
-            <div class="centrer">
-              <i
-                class="fa-solid fa-address-card"
-                style="color: rgb(194, 56, 187)"
-              ></i>
-              <h2>Portfolio</h2>
-              <p>
-                Site entièrement conçu sur mesure pour présenter mes projets.
-              </p>
-              <a
-                href="https://github.com/Cid57/Portfolio"
-                class="abtbtn-box2"
-                target="_blank"
-                >Lien Github</a
-              >
+          <!-- Portfolio -->
+          <div
+            class="project-card"
+            data-aos="zoom-in-up"
+            data-aos-duration="3000"
+            data-aos-delay="600"
+          >
+            <h2>Portfolio</h2>
+            <p>Site entièrement conçu sur mesure pour présenter mes projets</p>
+            <div class="project-links">
+              <a href="#" class="github-link" target="_blank">
+                <i class="fab fa-github"></i>
+                Lien Github
+              </a>
             </div>
+          </div>
 
-            <div>
-              <i
-                class="fa-solid fa-calculator"
-                style="color: rgb(194, 56, 187)"
-              ></i>
-              <h2>Calculatrice Php</h2>
-              <p>Application simple de calculatrice développée en PHP.</p>
+          <!-- Calculatrice PHP -->
+          <div
+            class="project-card"
+            data-aos="zoom-in-up"
+            data-aos-duration="3000"
+            data-aos-delay="700"
+          >
+            <h2>Calculatrice PHP</h2>
+            <p>Application de calculatrice interactive développée en PHP</p>
+            <div class="project-links">
               <a
                 href="Calculatrice/index.php"
-                class="abtbtn-box2"
+                class="site-link"
                 target="_blank"
-                >Lien site web</a
               >
-              <a
-                href="https://github.com/Cid57/Calculatrice-php"
-                class="abtbtn-box2"
-                target="_blank"
-                >Lien Github</a
-              >
+                <i class="fas fa-globe"></i>
+                Lien site web
+              </a>
+              <a href="#" class="github-link" target="_blank">
+                <i class="fab fa-github"></i>
+                Lien Github
+              </a>
             </div>
+          </div>
 
-            <div>
-              <i
-                class="fa-solid fa-building"
-                style="color: rgb(194, 56, 187)"
-              ></i>
-              <h2>Agence SingerRooms</h2>
-              <p>Projet de site pour une agence de réservation de chambres.</p>
-              <a
-                href="Agence-SingerRooms/index.html"
-                class="abtbtn-box2"
-                target="_blank"
-                >Lien site web</a
-              >
-              <a
-                href="https://github.com/Cid57/Agence-SingerRooms"
-                class="abtbtn-box2"
-                target="_blank"
-                >Lien Github</a
-              >
+          <!-- Agence SingerRooms -->
+          <div
+            class="project-card"
+            data-aos="zoom-in-up"
+            data-aos-duration="3000"
+            data-aos-delay="800"
+          >
+            <h2>Agence SingerRooms</h2>
+            <p>Projet de site pour une agence de réservation de chambres</p>
+            <div class="project-links">
+              <a href="#" class="site-link" target="_blank">
+                <i class="fas fa-globe"></i>
+                Lien site web
+              </a>
+              <a href="#" class="github-link" target="_blank">
+                <i class="fab fa-github"></i>
+                Lien Github
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contacts" id="Contact">
-      <div class="contact-text">
-        <h2>Contact <span>Moi</span></h2>
-        <img src="./IMG/logo-svg.svg" width="50%" height="50%" alt="logo" />
-        <div class="contact-list">
-          <a href="mailto:contact@cindysinger.fr"
-            ><i class="bx bxs-send"></i>Me contacter</a
-          >
-          <li><i class="bx bxs-phone-call"></i>06-47-77-35-74</li>
+    <footer class="footer" id="Contact">
+      <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="currentColor"
+            d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-contact">
+            <h3>Contactez-moi</h3>
+            <div class="contact-info">
+              <a
+                href="mailto:contact@cindysinger.fr?subject=Contact depuis le portfolio"
+                class="contact-link"
+                onclick="window.location.href='mailto:contact@cindysinger.fr'"
+              >
+                <i class="bx bxs-envelope"></i>
+                <span>contact@cindysinger.fr</span>
+              </a>
+              <a href="tel:06-47-77-35-74" class="contact-phone">
+                <i class="bx bxs-phone"></i>
+                <span>06-47-77-35-74</span>
+              </a>
+              <a
+                href="https://maps.google.com/?q=Metz,France"
+                target="_blank"
+                class="contact-location"
+              >
+                <i class="bx bxs-map"></i>
+                <span>Metz, France</span>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="contact-icons">
-          <a href="https://www.linkedin.com/in/cindy-singer/" target="_blank"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a href="https://github.com/Cid57" target="_blank"
-            ><i class="bx bxl-github"></i
-          ></a>
+
+        <div class="footer-center">
+          <div class="quick-links">
+            <h3>Navigation Rapide</h3>
+            <ul>
+              <li><a href="#Home">Accueil</a></li>
+              <li><a href="#About">À Propos</a></li>
+              <li><a href="#Points-forts">Points forts</a></li>
+              <li><a href="#Projets">Projets</a></li>
+              <li><a href="#Contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="social-links">
+            <h3>Suivez-moi</h3>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/cindy-singer/"
+                target="_blank"
+                class="social-icon linkedin"
+              >
+                <i class="bx bxl-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="https://github.com/Cid57"
+                target="_blank"
+                class="social-icon github"
+              >
+                <i class="bx bxl-github"></i>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <div class="last-text">
-      <p><i class="fa-regular fa-copyright"></i>Développée par Cindy - 2024</p>
-    </div>
-    <a href="#Home" class="top"><i class="bx bx-up-arrow-alt"></i></a>
 
-    <script src="main.js"></script>
-    <script>
-      window.watsonAssistantChatOptions = {
-        integrationID: "a2d8c1ce-4dad-4c87-a327-b0e8ab552c30", // The ID of this integration.
-        region: "eu-de", // The region your integration is hosted in.
-        serviceInstanceID: "477c80c2-088f-40ec-a5a1-d1ae3a544ea5", // The ID of your service instance.
-        onLoad: async (instance) => {
-          await instance.render();
-        },
-      };
-      setTimeout(function () {
-        const t = document.createElement("script");
-        t.src =
-          "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
-          (window.watsonAssistantChatOptions.clientVersion || "latest") +
-          "/WatsonAssistantChatEntry.js";
-        document.head.appendChild(t);
-      });
-    </script>
+      <div class="footer-bottom">
+        <div class="copyright">
+          <i class="fa-regular fa-copyright"></i>
+          <span>2024 Cindy Singer. Tous droits réservés.</span>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#Home" class="top">
+      <i class="bx bx-up-arrow-alt"></i>
+    </a>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/loader.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./main.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/chatbot.js"></script>
   </body>
 </html>
