@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/cindy/Documents/Projet/Portfolio/**)",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(grep:*)"
+    ]
+  }
+}

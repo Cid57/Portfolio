@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>404 - Page non trouvée | Cindy Singer</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <meta name="theme-color" content="#d48ba1" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+      /* Styles spécifiques à la page 404 */
+      .error-page {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .error-content {
+        text-align: center;
+        max-width: 600px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .error-code {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(8rem, 20vw, 15rem);
+        font-weight: 700;
+        line-height: 1;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin-bottom: 1rem;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .error-title {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+        color: var(--text-main);
+        margin-bottom: 1rem;
+        font-weight: 600;
+      }
+
+      .error-message {
+        font-size: 1.1rem;
+        color: var(--text-muted);
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+
+      .error-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .error-suggestions {
+        margin-top: 3rem;
+        padding: 2rem;
+        background: var(--glass-bg);
+        backdrop-filter: blur(var(--backdrop-blur));
+        border-radius: var(--radius-md);
+        border: 1px solid var(--glass-border);
+      }
+
+      .error-suggestions h3 {
+        font-size: 1.2rem;
+        color: var(--primary);
+        margin-bottom: 1rem;
+        font-weight: 600;
+      }
+
+      .suggestions-list {
+        display: grid;
+        gap: 0.75rem;
+        text-align: left;
+      }
+
+      .suggestion-link {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: var(--radius-sm);
+        color: var(--text-main);
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border: 1px solid transparent;
+      }
+
+      .suggestion-link:hover {
+        background: rgba(212, 139, 161, 0.1);
+        border-color: var(--primary);
+        transform: translateX(5px);
+      }
+
+      .suggestion-icon {
+        width: 24px;
+        height: 24px;
+        color: var(--primary);
+        flex-shrink: 0;
+      }
+
+      /* Animation de fond */
+      .error-page::before {
+        content: "";
+        position: absolute;
+        top: -10%;
+        right: -5%;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(
+          circle,
+          rgba(238, 188, 208, 0.2) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+        animation: float-bg 8s infinite alternate ease-in-out;
+        z-index: -1;
+      }
+
+      .error-page::after {
+        content: "";
+        position: absolute;
+        bottom: 10%;
+        left: -10%;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(
+          circle,
+          rgba(142, 125, 179, 0.15) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+        animation: float-bg 10s infinite alternate-reverse ease-in-out;
+        z-index: -1;
+      }
+
+      @keyframes float-bg {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(-20px, 30px);
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .error-actions {
+          width: 100%;
+        }
+
+        .btn {
+          width: 100%;
+        }
+
+        .error-suggestions {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-page">
+      <div class="error-content">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Page introuvable</h1>
+        <p class="error-message">
+          Oups ! La page que vous recherchez semble avoir pris la poudre d'escampette.
+          Elle a peut-être été déplacée ou n'existe plus.
+        </p>
+
+        <div class="error-actions">
+          <a href="/" class="btn btn--primary">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="margin-right: 8px">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+            Retour à l'accueil
+          </a>
+        </div>
+
+        <div class="error-suggestions">
+          <h3>Pages populaires</h3>
+          <div class="suggestions-list">
+            <a href="/#about" class="suggestion-link">
+              <svg class="suggestion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+              </svg>
+              <span>À propos de moi</span>
+            </a>
+
+            <a href="/#skills" class="suggestion-link">
+              <svg class="suggestion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+              </svg>
+              <span>Mes compétences</span>
+            </a>
+
+            <a href="/#projects" class="suggestion-link">
+              <svg class="suggestion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+              </svg>
+              <span>Mes projets</span>
+            </a>
+
+            <a href="/#contact" class="suggestion-link">
+              <svg class="suggestion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <span>Me contacter</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Animation au chargement
+      document.addEventListener('DOMContentLoaded', function() {
+        const errorContent = document.querySelector('.error-content');
+        errorContent.style.opacity = '0';
+        errorContent.style.transform = 'translateY(20px)';
+        errorContent.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+
+        setTimeout(() => {
+          errorContent.style.opacity = '1';
+          errorContent.style.transform = 'translateY(0)';
+        }, 100);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Télécharger QR Code KUCK</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
+          sans-serif;
+        background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+        color: #e5e7eb;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        padding-top: 60px;
+      }
+
+      /* ───────────────── TOP BAR ───────────────── */
+
+      .top-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 16px;
+        background: rgba(15, 23, 42, 0.8);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+        z-index: 1000;
+      }
+
+      .back-btn {
+        color: #9ca3af;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 8px 16px;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .back-btn:hover {
+        color: #f3f4f6;
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .container {
+        text-align: center;
+        max-width: 500px;
+        width: 100%;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #f3f4f6;
+      }
+
+      .qr-container {
+        background: white;
+        border-radius: 16px;
+        padding: 20px;
+        margin-bottom: 30px;
+        display: inline-block;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .qr-code {
+        width: 220px;
+        height: 220px;
+      }
+
+      .download-btn {
+        background: #2563eb;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-bottom: 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .download-btn:hover {
+        background: #1d4ed8;
+        transform: translateY(-2px);
+      }
+
+      .info {
+        font-size: 14px;
+        color: #9ca3af;
+        line-height: 1.5;
+      }
+
+      .info strong {
+        color: #60a5fa;
+      }
+
+      /* ───────────────── BRAND PILL ───────────────── */
+
+      .brand-pill {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 8px 16px;
+        background: rgba(15, 23, 42, 0.6);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 999px;
+        backdrop-filter: blur(8px);
+      }
+
+      .brand-pill > img {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .brand-text {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .brand-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #00d4ff;
+        letter-spacing: 0.02em;
+      }
+
+      .brand-subtitle {
+        font-size: 10px;
+        color: #9ca3af;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .badge-beta {
+        background: rgba(0, 212, 255, 0.15);
+        color: #00d4ff;
+        font-size: 10px;
+        font-weight: 600;
+        padding: 4px 8px;
+        border-radius: 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        border: 1px solid rgba(0, 212, 255, 0.3);
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 0 16px;
+        }
+
+        .qr-section {
+          padding: 24px 20px;
+        }
+
+        .qr-code {
+          width: 180px;
+          height: 180px;
+        }
+
+        .title {
+          font-size: 24px;
+        }
+
+        .subtitle {
+          font-size: 15px;
+        }
+
+        .top-bar {
+          padding: 12px 16px;
+        }
+
+        body {
+          padding-top: 50px;
+        }
+
+        .brand-pill {
+          padding: 6px 12px;
+        }
+
+        .brand-pill > img {
+          width: 28px;
+          height: 28px;
+        }
+
+        .brand-title {
+          font-size: 13px;
+        }
+
+        .brand-subtitle {
+          font-size: 9px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top-bar">
+      <a href="index.html" class="back-btn"> ← Retour </a>
+      <div class="brand-pill">
+        <img src="./kuck-logo-3000.jpg" alt="KUCK Logo" />
+        <div class="brand-text">
+          <div class="brand-title">KUCK</div>
+          <div class="brand-subtitle">3D • AR • Digital Factory</div>
+        </div>
+        <div class="badge-beta">Demo</div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="qr-container">
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&format=png&data=https://3dtours-kuck.pages.dev/"
+          alt="QR Code KUCK WebAR"
+          class="qr-code"
+          id="qrImage"
+        />
+      </div>
+
+      <a
+        href="https://api.qrserver.com/v1/create-qr-code/?size=220x220&format=png&data=https://3dtours-kuck.pages.dev/"
+        download="kuck-webar-qr.png"
+        class="download-btn"
+      >
+        ⬇️ Télécharger le QR Code (PNG)
+      </a>
+
+      <div class="info">
+        <p><strong>Pour kuck.lu :</strong></p>
+        <p>• Cette image sera intégré sur kuck.lu</p>
+        <p>• Liens <strong>https://3dtours-kuck.pages.dev/</strong></p>
+        <p>• Les clients scannent et découvrent votre démo WebAR</p>
+      </div>
+    </div>
+  </body>
+</html>

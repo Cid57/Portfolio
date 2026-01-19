@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QR Code - KUCK 3D & AR</title>
+
+    <!-- Google Font Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
+          sans-serif;
+        background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+        color: #e5e7eb;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .container {
+        text-align: center;
+        max-width: 400px;
+        width: 100%;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 32px;
+        line-height: 1.3;
+        color: #f3f4f6;
+      }
+
+      .qr-wrapper {
+        background: white;
+        border-radius: 16px;
+        padding: 24px;
+        margin-bottom: 30px;
+        display: inline-block;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .qr-wrapper::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #00d4ff 0%, #2563eb 100%);
+      }
+
+      .qr-code {
+        width: 240px;
+        height: 240px;
+        border-radius: 12px;
+        overflow: hidden;
+        margin: 0 auto;
+        background: white;
+      }
+
+      .qr-code img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+
+      .instructions {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #9ca3af;
+        margin-bottom: 20px;
+      }
+
+      .note {
+        font-size: 12px;
+        color: #6b7280;
+        opacity: 0.8;
+      }
+
+      .glow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(
+          circle,
+          rgba(37, 99, 235, 0.1) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      /* ───────────────── TOP BAR ───────────────── */
+
+      .top-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 16px;
+        background: rgba(15, 23, 42, 0.8);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+        z-index: 1000;
+      }
+
+      .back-btn {
+        color: #9ca3af;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 8px 16px;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .back-btn:hover {
+        color: #f3f4f6;
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .brand-pill {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 8px 16px;
+        background: rgba(15, 23, 42, 0.6);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 999px;
+        backdrop-filter: blur(8px);
+      }
+
+      .brand-pill > img {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .brand-text {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .brand-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #00d4ff;
+        letter-spacing: 0.02em;
+      }
+
+      .brand-subtitle {
+        font-size: 10px;
+        color: #9ca3af;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .badge-beta {
+        background: rgba(0, 212, 255, 0.15);
+        color: #00d4ff;
+        font-size: 10px;
+        font-weight: 600;
+        padding: 4px 8px;
+        border-radius: 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        border: 1px solid rgba(0, 212, 255, 0.3);
+      }
+
+      .qr-label {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: #00d4ff;
+        color: white;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 4px 8px;
+        border-radius: 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      /* Adjust body padding for fixed header */
+      body {
+        padding-top: 60px;
+      }
+
+      @media (max-width: 480px) {
+        .title {
+          font-size: 20px;
+          margin-bottom: 24px;
+        }
+
+        .qr-wrapper {
+          padding: 20px;
+          margin-bottom: 24px;
+        }
+
+        .qr-code {
+          width: 200px;
+          height: 200px;
+        }
+
+        .instructions {
+          font-size: 13px;
+        }
+
+        .top-bar {
+          padding: 12px 16px;
+        }
+
+        .brand-pill {
+          padding: 6px 12px;
+        }
+
+        .brand-pill > img {
+          width: 28px;
+          height: 28px;
+        }
+
+        .brand-title {
+          font-size: 13px;
+        }
+
+        .brand-subtitle {
+          font-size: 9px;
+        }
+
+        body {
+          padding-top: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="glow"></div>
+    <header class="top-bar">
+      <a href="index.html" class="back-btn"> ← Retour </a>
+      <div class="brand-pill">
+        <img src="./kuck-logo-3000.jpg" alt="KUCK Logo" />
+        <div class="brand-text">
+          <div class="brand-title">KUCK</div>
+          <div class="brand-subtitle">3D • AR • Digital Factory</div>
+        </div>
+        <div class="badge-beta">Demo</div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="qr-wrapper">
+        <div class="qr-label">WebAR</div>
+        <div class="qr-code">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2F3dtours-kuck.pages.dev%2F"
+            alt="QR Code KUCK 3D & AR"
+          />
+        </div>
+      </div>
+
+      <p class="instructions">
+        Ouvrez l'appareil photo de votre téléphone et scannez ce code.
+      </p>
+
+      <p class="note">
+        Fonctionne sur iPhone et Android • Aucune application requise
+      </p>
+    </div>
+  </body>
+</html>

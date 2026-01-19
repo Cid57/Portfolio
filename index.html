@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cindy Singer - Développeuse Full-Stack. Applications web orientées métier, gestion documentaire et conformité."
+    />
+    <title>Cindy Singer | Développeuse Full-Stack</title>
+
+    <!-- SEO & Social Media -->
+    <meta name="author" content="Cindy Singer" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://cindysinger.fr/" />
+
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta
+      property="og:title"
+      content="Cindy Singer | Développeuse Full-Stack"
+    />
+    <meta
+      property="og:description"
+      content="Applications métier, SaaS & expériences immersives. Spécialiste Laravel, React et WebAR."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cindysinger.fr/" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Cindy Singer | Développeuse Full-Stack"
+    />
+    <meta
+      name="twitter:description"
+      content="Applications métier, SaaS & expériences immersives. Spécialiste Laravel, React et WebAR."
+    />
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <meta name="theme-color" content="#d48ba1" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://ajax.googleapis.com" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Intégration Model Viewer pour la 3D -->
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"
+    ></script>
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Cindy Singer",
+        "jobTitle": "Développeuse Full-Stack",
+        "url": "https://cindysinger.fr",
+        "sameAs": [
+          "https://www.linkedin.com/in/cindy-singer/",
+          "https://github.com/Cid57"
+        ],
+        "knowsAbout": [
+          "Laravel",
+          "React",
+          "WebAR",
+          "SaaS",
+          "PHP",
+          "JavaScript",
+          "Vue.js",
+          "MySQL"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Metz",
+          "addressRegion": "Grand Est",
+          "addressCountry": "FR"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Skip Link pour accessibilité -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- EN-TÊTE -->
+    <header class="header">
+      <nav
+        class="nav container"
+        role="navigation"
+        aria-label="Navigation principale"
+      >
+        <a href="#" class="nav__logo">Cindy<span>.</span></a>
+        <button class="nav__toggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav__menu">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main id="main-content">
+      <!-- HERO (ACCUEIL) -->
+      <section class="hero" role="banner" aria-label="Présentation">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <h1 class="hero__title">Développeuse Full-Stack</h1>
+            <p class="hero__signature">
+              Création d'expérience <br />
+              <span class="highlight">Web & Métier</span>
+            </p>
+            <p class="hero__subtitle">
+              Applications métier, SaaS & expériences immersives
+            </p>
+
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn--primary">Voir mes projets</a>
+              <a
+                href="CV-DEV-SINGER-CINDY-3.pdf"
+                class="btn btn--outline"
+                download
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  style="margin-right: 8px"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                  ></path>
+                </svg>
+                Mon CV
+              </a>
+              <a href="#contact" class="btn btn--outline">Me contacter</a>
+            </div>
+          </div>
+          <div class="hero__image-wrapper">
+            <div class="hero__image">
+              <img src="assets/img/moi.PNG" alt="Cindy Singer" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- À PROPOS -->
+      <section
+        class="section"
+        id="about"
+        role="region"
+        aria-labelledby="about-title"
+      >
+        <div class="container">
+          <div class="section__header">
+            <span class="section__number">01</span>
+            <h2 class="section__title" id="about-title">À propos</h2>
+          </div>
+          <div class="about">
+            <div class="about__text">
+              <p>
+                Je développe des
+                <strong>outils SaaS pour les équipes terrain</strong>
+                (chantier, conformité, documentation) et je crée des
+                <strong>expériences immersives</strong> (scan 3D, WebAR, visites
+                virtuelles) pour valoriser des espaces et des services.
+              </p>
+              <p>
+                Au-delà du code, je m'intéresse à l'ergonomie et à l'expérience
+                utilisateur, garantissant que chaque outil développé apporte une
+                réelle valeur ajoutée à ses utilisateurs.
+              </p>
+            </div>
+            <div class="about__stats">
+              <div class="stat-card">
+                <h3>Localisation</h3>
+                <p>Metz / Luxembourg</p>
+              </div>
+              <div class="stat-card">
+                <h3>Spécialité</h3>
+                <p>App Métier & SaaS</p>
+              </div>
+              <div class="stat-card">
+                <h3>Expérience</h3>
+                <p>Full-Stack</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPÉTENCES -->
+      <section
+        class="section section--dark"
+        id="skills"
+        role="region"
+        aria-labelledby="skills-title"
+      >
+        <div class="container">
+          <div class="section__header">
+            <span class="section__number">02</span>
+            <h2 class="section__title" id="skills-title">Expertise</h2>
+          </div>
+          <div class="skills-grid">
+            <!-- Backend -->
+            <div class="skill-card">
+              <h3>Back-End</h3>
+              <ul class="skill-list">
+                <li>PHP 8+</li>
+                <li>Laravel Framework</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <!-- Frontend -->
+            <div class="skill-card">
+              <h3>Front-End</h3>
+              <ul class="skill-list">
+                <li>HTML5 / CSS3</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Tailwind / Bootstrap</li>
+              </ul>
+            </div>
+            <!-- Immersif / XR -->
+            <div class="skill-card">
+              <h3>Immersif / XR</h3>
+              <ul class="skill-list">
+                <li>Scan 3D / Photogrammétrie</li>
+                <li>WebAR (Réalité Augmentée)</li>
+                <li>Visites Virtuelles / VR</li>
+                <li>Intégration 3D Web</li>
+              </ul>
+            </div>
+            <!-- Outils -->
+            <div class="skill-card">
+              <h3>Outils & DevOps</h3>
+              <ul class="skill-list">
+                <li>Git / GitHub</li>
+                <li>Docker Basics</li>
+                <li>Figma (Maquettage)</li>
+                <li>VS Code</li>
+              </ul>
+            </div>
+            <!-- Soft Skills -->
+            <div class="skill-card">
+              <h3>Méthodologie</h3>
+              <ul class="skill-list">
+                <li>Agile / Scrum</li>
+                <li>Analyse fonctionnelle</li>
+                <li>Gestion documentaire</li>
+                <li>UI/UX Sensitivity</li>
+                <li>Responsive</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJETS -->
+      <section
+        class="section"
+        id="projects"
+        role="region"
+        aria-labelledby="projects-title"
+      >
+        <div class="container">
+          <div class="section__header">
+            <span class="section__number">03</span>
+            <h2 class="section__title" id="projects-title">Projets Récents</h2>
+          </div>
+          <div class="projects-grid">
+            <!-- Projet 1 -->
+            <article class="project-card">
+              <div class="project-card__visual">
+                <img
+                  src="assets/img/Projets/teeqode.jpg"
+                  class="project-card__bg"
+                  alt="Teeqode SaaS"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">Teeqode</h3>
+                <p class="project-card__desc">
+                  Plateforme SaaS complète pour la gestion documentaire et la
+                  conformité sur chantiers. Gestion des rôles, flux de
+                  validation et archivage sécurisé.
+                </p>
+                <div class="project-card__footer">
+                  <div class="project-tags">
+                    <span>Laravel</span>
+                    <span>Vue.js</span>
+                    <span>MySQL</span>
+                  </div>
+                  <a
+                    href="https://www.teeqode.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    aria-label="Voir le projet"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Projet 2 -->
+            <article class="project-card">
+              <div
+                class="project-card__visual"
+                style="
+                  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+                "
+              >
+                <!-- Remplacement de l'image par le Viewer 3D -->
+                <model-viewer
+                  src="logo-kuck-ar/Head_AR_ver.04.glb"
+                  alt="Modèle 3D Logo Kuck"
+                  auto-rotate
+                  camera-controls
+                  shadow-intensity="1"
+                  environment-image="neutral"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 5;
+                  "
+                >
+                </model-viewer>
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">Expérience WebAR (Kuck)</h3>
+                <p class="project-card__desc">
+                  Intégration d'un logo 3D animé en Réalité Augmentée (WebAR).
+                  Scannez le QR code pour voir le logo apparaître dans votre
+                  environnement.
+                </p>
+                <div class="project-card__footer">
+                  <div class="project-tags">
+                    <span>WebAR</span>
+                    <span>Model Viewer</span>
+                    <span>Interactive</span>
+                  </div>
+                  <a
+                    href="logo-kuck-ar/index.html"
+                    target="_blank"
+                    class="project-link"
+                    aria-label="Voir le projet"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Projet 3 -->
+            <article class="project-card">
+              <div class="project-card__visual">
+                <img
+                  src="assets/img/Projets/site-kuck.jpg"
+                  class="project-card__bg"
+                  alt="Agence Kuck"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">ServiceS Kuck</h3>
+                <p class="project-card__desc">
+                  Site vitrine officiel de l'agence de solutions immersives.
+                  Présentation des services VR/AR, portfolio interactif et
+                  contact.
+                </p>
+                <div class="project-card__footer">
+                  <div class="project-tags">
+                    <span>HTML/CSS</span>
+                    <span>JS Vanilla</span>
+                    <span>Animation</span>
+                  </div>
+                  <a
+                    href="https://www.kuck.lu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    aria-label="Voir le projet"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Projet 4 -->
+            <article class="project-card">
+              <div class="project-card__visual">
+                <img
+                  src="assets/img/Projets/vandvdelice.jpg"
+                  class="project-card__bg"
+                  alt="V&V Délice"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">V&V Délice</h3>
+                <p class="project-card__desc">
+                  Site vitrine premium pour un restaurant luxembourgeois. Module
+                  de réservation et galerie photos optimisée.
+                </p>
+                <div class="project-card__footer">
+                  <div class="project-tags">
+                    <span>UI Design</span>
+                    <span>Responsive</span>
+                    <span>SEO</span>
+                  </div>
+                  <a
+                    href="https://www.vandvdelice.lu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    aria-label="Voir le projet"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Projet 5 -->
+            <article class="project-card">
+              <div
+                class="project-card__visual"
+                style="
+                  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 2rem;
+                "
+              >
+                <img
+                  src="assets/img/Projets/AGENT-LIFT.png"
+                  style="
+                    max-width: 70%;
+                    height: auto;
+                    object-fit: contain;
+                    position: relative;
+                    z-index: 10;
+                  "
+                  alt="Agent Lift - Assistant IA Chantier"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">
+                  Agent Lift - Assistant IA (En cours)
+                </h3>
+                <p class="project-card__desc">
+                  Agent IA vocal et textuel pour assister les ouvriers sur
+                  chantier (sécurité, levage). Interface React connectée à l'API
+                  Gemini.
+                </p>
+                <div class="project-card__footer">
+                  <div class="project-tags">
+                    <span>React</span>
+                    <span>Gemini API</span>
+                    <span>Vocal / Whisper</span>
+                  </div>
+                  <!-- Lien désactivé ou vers démo si dispo -->
+                  <span
+                    class="project-link"
+                    style="opacity: 0.5; cursor: default"
+                    aria-label="En cours"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-6h2zm0-8h-2V7h2z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Projet 6 -->
+            <article class="project-card">
+              <div class="project-card__visual">
+                <img
+                  src="madagascar/assets/images/animaux/nosy-be-2.jpg"
+                  class="project-card__bg"
+                  alt="Madagascar - Nosy Be"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">Madagascar</h3>
+                <p class="project-card__desc">
+                  Projet de site web dédié à la découverte de Madagascar.
+                  Vitrine touristique mettant en avant la richesse culturelle et
+                  naturelle.
+                </p>
+                <div class="project-card__footer">
+                  <div class="project-tags">
+                    <span>Web Design</span>
+                    <span>Voyage</span>
+                    <span>Découverte</span>
+                  </div>
+                  <!-- Lien activé -->
+                  <a
+                    href="madagascar/index.html"
+                    target="_blank"
+                    class="project-link"
+                    aria-label="Voir le projet"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section
+        class="section"
+        id="contact"
+        role="region"
+        aria-labelledby="contact-title"
+      >
+        <div class="container">
+          <div class="contact-container">
+            <h2 class="contact-text" id="contact-title">
+              Prêt à concrétiser votre projet digital ?<br />
+              Discutons-en ensemble.
+            </h2>
+            <div class="contact-links">
+              <a href="mailto:contact@cindysinger.fr" class="contact-btn">
+                <svg
+                  width="18"
+                  height="18"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                Envoyer un email
+              </a>
+              <a
+                href="https://www.linkedin.com/in/cindy-singer/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-btn"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"
+                  />
+                </svg>
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/Cid57"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-btn"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                  />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__text">
+          &copy; 2026 Cindy Singer. Tous droits réservés.
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

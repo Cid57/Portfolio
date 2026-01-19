@@ -1,0 +1,17 @@
+# Robots.txt - Portfolio Cindy Singer
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://cindysinger.fr/sitemap.xml
+
+# Bloquer les fichiers non pertinents pour l'indexation
+Disallow: /*.pdf$
+Disallow: /assets/img/fond-*
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /.claude/
+
+# Permettre le crawl des projets
+Allow: /logo-kuck-ar/
+Allow: /madagascar/

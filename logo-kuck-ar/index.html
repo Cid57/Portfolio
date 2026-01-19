@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KUCK – Visionneuse 3D & AR</title>
+
+    <!-- Google Font + Model Viewer -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Top bar -->
+    <header class="top-bar">
+      <div class="brand-pill">
+        <img src="./kuck-logo-3000.jpg" alt="KUCK Logo" />
+        <div class="brand-text">
+          <div class="brand-title">KUCK</div>
+          <div class="brand-subtitle">3D • AR • Digital Factory</div>
+        </div>
+        <div class="badge-beta">Demo</div>
+      </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="main-layout">
+      <!-- Texte vendeur -->
+      <section class="copy-block">
+        <div class="eyebrow">
+          <span></span>
+          Expérience interactive en temps réel
+        </div>
+        <h1>
+          Faites vivre vos espaces en <span>3D immersive</span> et en réalité
+          augmentée.
+        </h1>
+        <p class="subtitle">
+          Montrez exactement à vos clients ce qu’ils vont obtenir : une
+          visualisation 3D réaliste, manipulable et projetable directement dans
+          leur espace, depuis leur téléphone.
+        </p>
+
+        <div class="points">
+          <div class="point">
+            <div class="point-icon">✨</div>
+            <div>
+              Rotation, zoom et détails haute qualité sur tous les écrans.
+            </div>
+          </div>
+          <div class="point">
+            <div class="point-icon">📱</div>
+            <div>
+              Mode “Voir dans votre espace” : placez le modèle directement dans
+              la pièce, en AR.
+            </div>
+          </div>
+        </div>
+
+        <div class="qr-actions">
+          <a href="qr-kuck.html" class="cta-main"> 📱 Voir QR Code </a>
+          <a href="download-qr.html" class="cta-secondary">
+            ⬇️ Télécharger QR Code
+          </a>
+        </div>
+
+        <div class="qr-guidance">
+          <p class="guidance-text">
+            🔍 Scannez avec votre téléphone pour lancer l'expérience AR
+          </p>
+        </div>
+      </section>
+
+      <!-- Carte viewer -->
+      <section class="viewer-card" id="viewer-card">
+        <div class="viewer-header">
+          <div class="viewer-chip">Prévisualisation en direct</div>
+          <div class="viewer-meta">
+            <span><span class="viewer-meta-dot"></span> AR prête</span>
+          </div>
+        </div>
+
+        <model-viewer
+          src="./Head_AR_ver.04.glb"
+          auto-rotate
+          camera-controls
+          ar
+          ar-modes="scene-viewer quick-look webxr"
+          ar-scale="auto"
+          environment-image="neutral"
+          exposure="1"
+          shadow-intensity="1"
+          camera-orbit="0deg 80deg 3.5m"
+          camera-target="0m -0.15m 0m"
+          field-of-view="60deg"
+          min-camera-orbit="auto auto 2m"
+          max-camera-orbit="auto auto 8m"
+          scale="2 2 2"
+          interaction-prompt="auto"
+          loading="eager"
+        >
+          <button slot="ar-button" class="ar-button">
+            🎯 Voir dans votre espace
+          </button>
+        </model-viewer>
+
+        <div class="viewer-footer">
+          <div class="viewer-footer-legend">
+            <span class="legend-dot blue"></span
+            ><span>Glissez pour tourner</span>
+          </div>
+          <div class="viewer-footer-legend">
+            <span class="legend-dot green"></span
+            ><span>Pincez pour zoomer</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Gérer les erreurs de chargement du modèle 3D
+      document
+        .querySelector("model-viewer")
+        .addEventListener("error", (event) => {
+          console.error("Erreur de chargement du modèle 3D:", event);
+          alert(
+            "Erreur de chargement du modèle 3D. Vérifiez que le fichier Head_AR_ver.04.glb est bien présent."
+          );
+        });
+
+      // Détecter si l'appareil supporte AR
+      if ("xr" in navigator) {
+        navigator.xr.isSessionSupported("immersive-ar").then((supported) => {
+          if (!supported) {
+            console.log("AR non supportée sur cet appareil");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
