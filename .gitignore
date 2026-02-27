@@ -3,3 +3,6 @@
 *.usdz
 madagascar/projet-Halloween/assets/models/nun/
 assets/models/
+
+# Images archivees (non utilisees)
+assets/img/_archive/

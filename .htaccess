@@ -2,3 +2,38 @@ RewriteEngine On
 RewriteCond %{ENV:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Page 404 personnalisee
+ErrorDocument 404 /404.html
+
+# --- Headers de securite ---
+<IfModule mod_headers.c>
+  # Protection contre le clickjacking
+  Header always set X-Frame-Options "SAMEORIGIN"
+  # Empecher le MIME-type sniffing
+  Header always set X-Content-Type-Options "nosniff"
+  # Protection XSS
+  Header always set X-XSS-Protection "1; mode=block"
+  # Politique de referrer
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  # Permissions Policy
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# --- Compression GZIP ---
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml application/xml
+</IfModule>
+
+# --- Cache des assets statiques ---
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType model/gltf-binary "access plus 1 year"
+</IfModule>
